@@ -1,4 +1,4 @@
-#%% 
+#%%
 from dataclasses import dataclass
 from pathlib import Path
 import glob
@@ -17,10 +17,11 @@ class TrajProcessor():
     skip_n_frames: int
     def __post_init__(self) -> None:
         """Reads all trajectories and init_strucs"""
+        from ase.io.trajectory import Trajectory
         from ase.io import read
         _trajs, _mixes = [], []
         for _path, _mix in zip(self.sim_paths, self.init_struc_paths):
-            _trajs.append(read(_path, ":"))
+            _trajs.append(Trajectory(_path))
             _mixes.append(read(_mix))
         self.trajs = _trajs
         self.n_trajs = len(_trajs)
@@ -32,7 +33,7 @@ class TrajProcessor():
         unique, counts = np.unique(ans, return_counts=True)
         dict_z_count   = dict(zip(unique,counts))
         n_ir = dict_z_count[77] - n_iro2
-        n_o  = dict_z_count[8]  - 2*n_iro2 - n_h2o 
+        n_o  = dict_z_count[8]  - 2*n_iro2 - n_h2o
         n_h  = dict_z_count[1]  - 2*n_h2o
         return {"Ir": n_ir, "O": n_o, "H": n_h}
 
@@ -42,7 +43,7 @@ class TrajProcessor():
         dict_counts = self._count_H_and_O(atoms)
         x_H2O = dict_counts['O']
         y_H2  = (2*x_H2O - dict_counts['H'])/2
-        return atoms.info['md_energy'] + y_H2*G_h2 - x_H2O*G_h2o        
+        return atoms.info['md_energy'] + y_H2*G_h2 - x_H2O*G_h2o
 
     def _identify_cus_bri(self, idx):
         atoms = self.init_strucs[idx]
@@ -53,7 +54,7 @@ class TrajProcessor():
         #Everything else can be dynamic and is counted in a general way
         O_cus = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_cus, mic=True))<2.3 and min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.3)])
         return max_Ir_Z, Ir_bri, Ir_cus, O_cus
-    
+
     def _count_bridge(self, atoms, Ir_bri, Ir_cus, max_Ir_Z):
         O_bri = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_bri, mic=True))<2.3 and min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.3)])
         H_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'H') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
@@ -66,7 +67,7 @@ class TrajProcessor():
         else:
             bri_O_c = O_bri
         return atoms.info['time'], atoms.info['md_energy'], O_bri, bri_O_H2, bri_O_H, bri_O_c
-    
+
     def _count_cus(self, atoms, Ir_bri, Ir_cus, max_Ir_Z):
         O_cus = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_cus, mic=True))<2.4 and min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.4)])
         H_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'H') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
@@ -78,7 +79,7 @@ class TrajProcessor():
         cus_O_c  = [atom.index for atom in atoms if atom.index in O_cus and len([d for d in atoms.get_distances(atom.index, H_interface, mic=True) if d<1.1])==0 and len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==0]
         cus_O_O  = [atom.index for atom in atoms if atom.index in O_cus and len([d for d in atoms.get_distances(atom.index, H_interface, mic=True) if d<1.1])==0 and len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==1]
         return atoms.info['time'], atoms.info['md_energy'], O_cus, cus_O_H2, cus_O_H, cus_O_c, cus_O_O
-    
+
     def build_compositions_dfs(self, make_plots=True):
         for index in range(self.n_trajs):
             print("Building comp df for index ", index)
@@ -94,8 +95,8 @@ class TrajProcessor():
                 cus_df.append(append_this_cus)
             bri_df = pd.concat(bri_df)
             cus_df = pd.concat(cus_df)
-            filepath = Path.cwd()/'CSVs'  
-            filepath.mkdir(parents=True, exist_ok=True)  
+            filepath = Path.cwd()/'CSVs'
+            filepath.mkdir(parents=True, exist_ok=True)
             bri_df.to_csv(filepath/f'bri_df_{index}.csv')
             cus_df.to_csv(filepath/f'cus_df_{index}.csv')
             if make_plots:
@@ -124,13 +125,13 @@ class TrajProcessor():
             ax.label_outer()
         leg = plt.legend(loc='lower center',prop={'size': 18}, bbox_to_anchor=(-0.05,-0.35), ncol=4)
         leg._legend_box.align = "left"
-        filepath = Path.cwd()/'PLOTs'  
-        filepath.mkdir(parents=True, exist_ok=True)  
+        filepath = Path.cwd()/'PLOTs'
+        filepath.mkdir(parents=True, exist_ok=True)
         plt.savefig(filepath/f"comps_{sim_index}.png", dpi=300, bbox_inches='tight')
 # %%
 def main():
-    simulationGroup = TrajProcessor(sim_paths=glob.glob("sims/sim_*/newmd.xyz"),
-                                    init_struc_paths=glob.glob("sims/sim_*/mix.xyz"),
+    simulationGroup = TrajProcessor(sim_paths=glob.glob("sim_1*/newmd.traj"),
+                                    init_struc_paths=glob.glob("sim_1*/mix.xyz"),
                                     skip_n_frames=10)
     simulationGroup.build_compositions_dfs(make_plots=False)
 # %%
