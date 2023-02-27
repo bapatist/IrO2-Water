@@ -12,6 +12,7 @@ matplotlib.rc('font', **font)
 # %%
 @dataclass
 class TrajProcessor():
+    sim_indices: list # with init and final index
     sim_paths: list
     init_struc_paths: list
     skip_n_frames: int
@@ -24,7 +25,6 @@ class TrajProcessor():
             _trajs.append(Trajectory(_path))
             _mixes.append(read(_mix))
         self.trajs = _trajs
-        self.n_trajs = len(_trajs)
         self.init_strucs = _mixes
 
     @staticmethod
@@ -81,11 +81,11 @@ class TrajProcessor():
         return atoms.info['time'], atoms.info['md_energy'], O_cus, cus_O_H2, cus_O_H, cus_O_c, cus_O_O
 
     def build_compositions_dfs(self, make_plots=True):
-        for index in range(self.n_trajs):
+        for i, index in enumerate(range(self.sim_indices[0], 1+self.sim_indices[1], 1)):
             print("Building comp df for index ", index)
-            _max_Ir_Z, _Ir_bri, _Ir_cus, _O_cus = self._identify_cus_bri(idx=index)
+            _max_Ir_Z, _Ir_bri, _Ir_cus, _O_cus = self._identify_cus_bri(idx=i)
             bri_df, cus_df = [], []
-            for atoms in self.trajs[index][::self.skip_n_frames]:
+            for atoms in self.trajs[i][::self.skip_n_frames]:
                 free_ener = self.calc_free_energy(atoms)
                 time, ener, O_bri, bri_O_H2, bri_O_H, bri_O_c =  self._count_bridge(atoms=atoms, Ir_bri=_Ir_bri, Ir_cus=_Ir_cus, max_Ir_Z=_max_Ir_Z)
                 append_this_bri = pd.DataFrame([{'Time': time, 'Tot_Energy': ener, 'Free_Energy':free_ener, 'OH2': len(bri_O_H2), 'OH': len(bri_O_H), 'O': len(bri_O_c), 'All': len(O_bri)}])
@@ -130,8 +130,14 @@ class TrajProcessor():
         plt.savefig(filepath/f"comps_{sim_index}.png", dpi=300, bbox_inches='tight')
 # %%
 def main():
-    simulationGroup = TrajProcessor(sim_paths=glob.glob("sim_1*/newmd.traj"),
-                                    init_struc_paths=glob.glob("sim_1*/mix.xyz"),
+    sim_indices = int(input("Provide initial index:\n")), int(input("Provide final index:\n"))
+    sim_paths, init_struc_paths = [], []
+    for ind in range(sim_indices[0], 1+sim_indices[1], 1):
+        sim_paths.append(f"sim_{ind}/newmd.traj")
+        init_struc_paths.append(f"sim_{ind}/mix.xyz")
+    simulationGroup = TrajProcessor(sim_indices=sim_indices,
+                                    sim_paths=sim_paths,
+                                    init_struc_paths=init_struc_paths,
                                     skip_n_frames=10)
     simulationGroup.build_compositions_dfs(make_plots=False)
 # %%
