@@ -1,7 +1,6 @@
 #%%
 from dataclasses import dataclass
 from pathlib import Path
-import glob
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -12,7 +11,7 @@ matplotlib.rc('font', **font)
 # %%
 @dataclass
 class TrajProcessor():
-    sim_indices: list # with init and final index
+    sim_indices: list # two numbers: init and final index
     sim_paths: list
     init_struc_paths: list
     skip_n_frames: int
@@ -26,7 +25,45 @@ class TrajProcessor():
             _mixes.append(read(_mix))
         self.trajs = _trajs
         self.init_strucs = _mixes
+    
+    def _count_water(self, atoms, Ir_bri, Ir_cus, max_Ir_Z):
+        H_water = np.array([atom.index for atom in atoms if (atom.symbol=='H' and atom.z>max_Ir_Z)])
+        O_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'O') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
+        O_h2o = np.array([atom.index for atom in atoms if 
+                            (atom.symbol == 'O' and atom.z > max_Ir_Z and 
+                            min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.3 and 
+                            min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.3) and
+                            len([d for d in atoms.get_distances(atom.index, H_water, mic=True) if d<1.1])==2 and
+                            len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==0])
+        O_oh  = np.array([atom.index for atom in atoms if
+                            (atom.symbol == 'O' and atom.z > max_Ir_Z and
+                            min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.3 and 
+                            min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.3) and
+                            len([d for d in atoms.get_distances(atom.index, H_water, mic=True) if d<1.1])==1 and
+                            len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==0])
+        return O_h2o, O_oh
 
+    def build_water_compositions(self, build_csv=False, make_plots=False):
+        filepath = Path.cwd()/'CSVs'
+        filepath.mkdir(parents=True, exist_ok=True)
+        for i, index in enumerate(range(self.sim_indices[0], 1+self.sim_indices[1], 1)):
+            if build_csv:
+                print("Building water comp df for index ", index)
+                _max_Ir_Z, _Ir_bri, _Ir_cus, _O_cus = self._identify_cus_bri(idx=i)
+                water_df = []
+                for atoms in self.trajs[i][::self.skip_n_frames]:
+                    n_h2o, n_oh = self._count_water(atoms=atoms, Ir_bri=_Ir_bri, Ir_cus=_Ir_cus, max_Ir_Z=_max_Ir_Z)
+                    append_this_bri = pd.DataFrame([{'Time': atoms.info['time'], 'Tot_Energy': atoms.info['md_energy'], 'Free_Energy':self.calc_free_energy(atoms), 'H2O': len(n_h2o), 'OH': len(n_oh), 'All': len(n_oh)+len(n_h2o)}])
+                    water_df.append(append_this_bri)
+                water_df = pd.concat(water_df)
+                water_df.to_csv(filepath/f'water_df_{index}.csv')
+                if make_plots:
+                    self.plot_water(water_df, sim_index=index)
+            else:
+                water_df = pd.read_csv(filepath/f'water_df_{index}.csv')
+                if make_plots:
+                    self.plot_water(water_df, sim_index=index)
+    
     @staticmethod
     def _count_H_and_O(atoms, n_iro2=192, n_h2o=400): # Counts extra oxygens and hydrogens on surface
         ans            = atoms.get_atomic_numbers()
@@ -38,6 +75,7 @@ class TrajProcessor():
         return {"Ir": n_ir, "O": n_o, "H": n_h}
 
     def calc_free_energy(self, atoms): # Balancing to get interface free energy
+        # TO DO: deal with OH aqeous 
         G_h2o  = -13.907 #eV
         G_h2   = -6.745  #eV
         dict_counts = self._count_H_and_O(atoms)
@@ -80,9 +118,9 @@ class TrajProcessor():
         cus_O_O  = [atom.index for atom in atoms if atom.index in O_cus and len([d for d in atoms.get_distances(atom.index, H_interface, mic=True) if d<1.1])==0 and len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==1]
         return atoms.info['time'], atoms.info['md_energy'], O_cus, cus_O_H2, cus_O_H, cus_O_c, cus_O_O
 
-    def build_compositions_dfs(self, make_plots=True):
+    def build_surf_compositions(self, make_plots=True):
         for i, index in enumerate(range(self.sim_indices[0], 1+self.sim_indices[1], 1)):
-            print("Building comp df for index ", index)
+            print("Building surface comp df for index ", index)
             _max_Ir_Z, _Ir_bri, _Ir_cus, _O_cus = self._identify_cus_bri(idx=i)
             bri_df, cus_df = [], []
             for atoms in self.trajs[i][::self.skip_n_frames]:
@@ -101,6 +139,36 @@ class TrajProcessor():
             cus_df.to_csv(filepath/f'cus_df_{index}.csv')
             if make_plots:
                 self.plot_bars(bri_df=bri_df, cus_df=cus_df, sim_index=index)
+
+    def plot_water(self, water_df, sim_index):
+        fig, (ax1, ax2) = plt.subplots(2, 1, sharex='col', sharey='row')
+        # fig.set_size_inches(6,5)
+        ax1.plot(water_df['Time'], water_df['H2O'], label = '$H_2O$', color = 'orange', ls='-', alpha=1.0, zorder=0)
+        ax2.plot(water_df['Time'], water_df['OH'],  label = '$OH^-$',  color = 'red',    ls='-', alpha=1.0, zorder=1)
+        leg = fig.legend(loc='center', prop={'size': 15}, bbox_to_anchor=(0.5,0.5))
+        leg._legend_box.align = "center"
+        ax2.set(xlabel="$Time$ $in$ $ps$")
+        fig.text(-0.01, 0.5, '$Count$', va='center', rotation='vertical')
+        # # zoom-in / limit the view to different portions of the data
+        ax2.set_ylim(-1, 5)  
+        ax1.set_ylim(395, 405) 
+        # hide the spines between ax and ax2
+        ax1.spines['bottom'].set_visible(False)
+        ax2.spines['top'].set_visible(False)
+        ax1.xaxis.tick_top()
+        ax2.tick_params(labeltop=False)  # don't put tick labels at the top
+        ax2.xaxis.tick_bottom()
+        d = .015 
+        kwargs = dict(transform=ax1.transAxes, color='k', clip_on=False)
+        ax2.plot((-d, +d), (-d, +d), zorder=3, **kwargs)        # top-left diagonal
+        ax2.plot((1 - d, 1 + d), (-d, +d), zorder=4, **kwargs)  # top-right diagonal
+        kwargs.update(transform=ax2.transAxes)  # switch to the bottom axes
+        plt.plot((-d, +d), (1 - d, 1 + d), zorder=5, **kwargs)  # bottom-left diagonal
+        plt.plot((1 - d, 1 + d), (1 - d, 1 + d), zorder=6, **kwargs)  # bottom-right diagonal
+
+        filepath = Path.cwd()/'PLOTs'
+        filepath.mkdir(parents=True, exist_ok=True)
+        plt.savefig(filepath/f"water_comp_{sim_index}.png", dpi=300, bbox_inches='tight')
 
     def plot_bars(self, bri_df, cus_df, sim_index):
         bar_width = 5.0
@@ -127,10 +195,11 @@ class TrajProcessor():
         leg._legend_box.align = "left"
         filepath = Path.cwd()/'PLOTs'
         filepath.mkdir(parents=True, exist_ok=True)
-        plt.savefig(filepath/f"comps_{sim_index}.png", dpi=300, bbox_inches='tight')
+        plt.savefig(filepath/f"surf_comps_{sim_index}.png", dpi=300, bbox_inches='tight')
 # %%
 def main():
-    sim_indices = int(input("Provide initial index:\n")), int(input("Provide final index:\n"))
+    #sim_indices = int(input("Provide initial index:\n")), int(input("Provide final index:\n"))
+    sim_indices = 19, 19
     sim_paths, init_struc_paths = [], []
     for ind in range(sim_indices[0], 1+sim_indices[1], 1):
         sim_paths.append(f"sim_{ind}/newmd.traj")
@@ -139,7 +208,8 @@ def main():
                                     sim_paths=sim_paths,
                                     init_struc_paths=init_struc_paths,
                                     skip_n_frames=10)
-    simulationGroup.build_compositions_dfs(make_plots=False)
+    #simulationGroup.build_surf_compositions(make_plots=False)
+    simulationGroup.build_water_compositions(build_csv=False, make_plots=True)
 # %%
 if __name__ == "__main__":
     main()
