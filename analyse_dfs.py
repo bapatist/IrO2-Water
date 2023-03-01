@@ -82,9 +82,6 @@ def plot_trends(dfs, site='cus',
         site_ids = ['OO', 'O', 'OH', 'OH2']
     elif site=='bri':
         site_ids = ['O', 'OH']
-    df_joint['Tot_O'] = 2*df_joint['OO'] + df_joint['OH'] + df_joint['O'] + df_joint['OH2']
-    print(max(df_joint['Tot_O']))
-
     for use_x in site_ids:
         fig, axs = plt.subplots(2,1)#, sharex='col', sharey='row')
         #hb = axs[0].hexbin(x_ax, y_ax, gridsize=25, mincnt=1, bins = 'log', cmap='GnBu')
@@ -99,14 +96,36 @@ def plot_trends(dfs, site='cus',
         plt.subplots_adjust(hspace=0.0, wspace=0.0)
         if save_fig:
             plt.savefig(f'{save_fig_path}/{site}_{use_x}.png')
+
+def plot_trends_water(csv_files, save_fig=False, save_fig_path=None, skip_init=10, color='lightsteelblue'):
+    dfs = []
+    for file in csv_files:
+        dfs.append(pd.read_csv(file, index_col=0)[skip_init:])
+    df_joint= pd.concat(dfs)
+    print(len(df_joint))
+    cats = ['H2O', 'OH']
+    for use_x in cats:
+        fig, axs = plt.subplots(2,1)
+        sns.violinplot(x=use_x, y='Free_Energy', data=df_joint, color=color, ax = axs[0])
+        axs[0].set(ylabel='$Internal$ $Energy$ $(in$ $eV)$')
+        df_joint[use_x].value_counts().sort_index().plot(kind='bar', ax=axs[1], color=color)
+        axs[1].set(xlabel=f'$n$$_{{{use_x}}}$', ylabel='$Count$')
+        fig.set_size_inches(10,8.5)
+        plt.subplots_adjust(hspace=0.0, wspace=0.0)
+        if save_fig:
+            plt.savefig(f'{save_fig_path}/water_{use_x}.png')
 # %%
 def main():
-    csv_files = glob.glob("./CSVs/cus*.csv")
     plot_path = Path.cwd()/'TRENDs'
     plot_path.mkdir(parents=True, exist_ok=True)
-    dataframes= plot_free_eners_by_index(csv_files=csv_files, save_fig=True, save_fig_path=plot_path)
-    plot_free_eners_by_stoich(csv_files=csv_files, save_fig=True, save_fig_path=plot_path)
-    plot_trends(dfs=dataframes, site='cus', save_fig=True, save_fig_path=plot_path)
+
+    #surf_csv_files = glob.glob("./CSVs/cus*.csv")
+    #dataframes= plot_free_eners_by_index(csv_files=surf_csv_files, save_fig=True, save_fig_path=plot_path)
+    #plot_free_eners_by_stoich(csv_files=surf_csv_files, save_fig=True, save_fig_path=plot_path)
+    #plot_trends(dfs=dataframes, site='cus', save_fig=True, save_fig_path=plot_path)
+
+    water_csv_files = glob.glob("./CSVs/water_df_*.csv")
+    plot_trends_water(csv_files=water_csv_files, save_fig=True, save_fig_path=plot_path)
 
 if __name__=='__main__':
     main()
