@@ -25,45 +25,7 @@ class TrajProcessor():
             _mixes.append(read(_mix))
         self.trajs = _trajs
         self.init_strucs = _mixes
-    
-    def _count_water(self, atoms, Ir_bri, Ir_cus, max_Ir_Z):
-        H_water = np.array([atom.index for atom in atoms if (atom.symbol=='H' and atom.z>max_Ir_Z)])
-        O_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'O') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
-        O_h2o = np.array([atom.index for atom in atoms if 
-                            (atom.symbol == 'O' and atom.z > max_Ir_Z and 
-                            min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.3 and 
-                            min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.3) and
-                            len([d for d in atoms.get_distances(atom.index, H_water, mic=True) if d<1.1])==2 and
-                            len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==0])
-        O_oh  = np.array([atom.index for atom in atoms if
-                            (atom.symbol == 'O' and atom.z > max_Ir_Z and
-                            min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.3 and 
-                            min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.3) and
-                            len([d for d in atoms.get_distances(atom.index, H_water, mic=True) if d<1.1])==1 and
-                            len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==0])
-        return O_h2o, O_oh
 
-    def build_water_compositions(self, build_csv=False, make_plots=False):
-        filepath = Path.cwd()/'CSVs'
-        filepath.mkdir(parents=True, exist_ok=True)
-        for i, index in enumerate(range(self.sim_indices[0], 1+self.sim_indices[1], 1)):
-            if build_csv:
-                print("Building water comp df for index ", index)
-                _max_Ir_Z, _Ir_bri, _Ir_cus, _O_cus = self._identify_cus_bri(idx=i)
-                water_df = []
-                for atoms in self.trajs[i][::self.skip_n_frames]:
-                    n_h2o, n_oh = self._count_water(atoms=atoms, Ir_bri=_Ir_bri, Ir_cus=_Ir_cus, max_Ir_Z=_max_Ir_Z)
-                    append_this_bri = pd.DataFrame([{'Time': atoms.info['time'], 'Tot_Energy': atoms.info['md_energy'], 'Free_Energy':self.calc_free_energy(atoms), 'H2O': len(n_h2o), 'OH': len(n_oh), 'All': len(n_oh)+len(n_h2o)}])
-                    water_df.append(append_this_bri)
-                water_df = pd.concat(water_df)
-                water_df.to_csv(filepath/f'water_df_{index}.csv')
-                if make_plots:
-                    self.plot_water(water_df, sim_index=index)
-            else:
-                water_df = pd.read_csv(filepath/f'water_df_{index}.csv')
-                if make_plots:
-                    self.plot_water(water_df, sim_index=index)
-    
     @staticmethod
     def _count_H_and_O(atoms, n_iro2=192, n_h2o=400): # Counts extra oxygens and hydrogens on surface
         ans            = atoms.get_atomic_numbers()
@@ -75,7 +37,7 @@ class TrajProcessor():
         return {"Ir": n_ir, "O": n_o, "H": n_h}
 
     def calc_free_energy(self, atoms): # Balancing to get interface free energy
-        # TO DO: deal with OH aqeous 
+        # TO DO: deal with OH aqeous AND solvation/stablization
         G_h2o  = -13.907 #eV
         G_h2   = -6.745  #eV
         dict_counts = self._count_H_and_O(atoms)
@@ -90,11 +52,11 @@ class TrajProcessor():
         Ir_bri = np.array([atom.index for atom in atoms if (atom.symbol == 'Ir') and (atom.z == max_Ir_Z)])
         Ir_cus = np.array([atom.index for atom in atoms if (atom.symbol == 'Ir' and (np.round(max_Ir_Z - atom.z, 4) == 0.0953) and atom.index not in Ir_bri)])
         #Everything else can be dynamic and is counted in a general way
-        O_cus = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_cus, mic=True))<2.3 and min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.3)])
+        O_cus = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_cus, mic=True))<2.4 and min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.4)])
         return max_Ir_Z, Ir_bri, Ir_cus, O_cus
 
     def _count_bridge(self, atoms, Ir_bri, Ir_cus, max_Ir_Z):
-        O_bri = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_bri, mic=True))<2.3 and min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.3)])
+        O_bri = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_bri, mic=True))<2.4 and min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.4)])
         H_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'H') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
         H_bri = np.array([atom.index for atom in atoms if (atom.index in H_interface ) and min(atoms.get_distances(atom.index, O_bri, mic=True))<1.1])
         bri_O_H2, bri_O_H, bri_O_c =[], [], []
@@ -139,7 +101,45 @@ class TrajProcessor():
             cus_df.to_csv(filepath/f'cus_df_{index}.csv')
             if make_plots:
                 self.plot_bars(bri_df=bri_df, cus_df=cus_df, sim_index=index)
+                
+    def _count_water(self, atoms, Ir_bri, Ir_cus, max_Ir_Z):
+        H_water = np.array([atom.index for atom in atoms if (atom.symbol=='H' and atom.z>max_Ir_Z)])
+        O_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'O') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
+        O_h2o = np.array([atom.index for atom in atoms if 
+                            (atom.symbol == 'O' and atom.z > max_Ir_Z and 
+                            min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.4 and 
+                            min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.4) and
+                            len([d for d in atoms.get_distances(atom.index, H_water, mic=True) if d<1.1])==2 and
+                            len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==0])
+        O_oh  = np.array([atom.index for atom in atoms if
+                            (atom.symbol == 'O' and atom.z > max_Ir_Z and
+                            min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.4 and 
+                            min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.4) and
+                            len([d for d in atoms.get_distances(atom.index, H_water, mic=True) if d<1.1])==1 and
+                            len([d for d in atoms.get_distances(atom.index, O_interface, mic=True) if d<1.7 and d>0.0])==0])
+        return O_h2o, O_oh
 
+    def build_water_compositions(self, build_csv=False, make_plots=False):
+        filepath = Path.cwd()/'CSVs'
+        filepath.mkdir(parents=True, exist_ok=True)
+        for i, index in enumerate(range(self.sim_indices[0], 1+self.sim_indices[1], 1)):
+            if build_csv:
+                print("Building water comp df for index ", index)
+                _max_Ir_Z, _Ir_bri, _Ir_cus, _O_cus = self._identify_cus_bri(idx=i)
+                water_df = []
+                for atoms in self.trajs[i][::self.skip_n_frames]:
+                    n_h2o, n_oh = self._count_water(atoms=atoms, Ir_bri=_Ir_bri, Ir_cus=_Ir_cus, max_Ir_Z=_max_Ir_Z)
+                    append_this_bri = pd.DataFrame([{'Time': atoms.info['time'], 'Tot_Energy': atoms.info['md_energy'], 'Free_Energy':self.calc_free_energy(atoms), 'H2O': len(n_h2o), 'OH': len(n_oh), 'All': len(n_oh)+len(n_h2o)}])
+                    water_df.append(append_this_bri)
+                water_df = pd.concat(water_df)
+                water_df.to_csv(filepath/f'water_df_{index}.csv')
+                if make_plots:
+                    self.plot_water(water_df, sim_index=index)
+            else:
+                water_df = pd.read_csv(filepath/f'water_df_{index}.csv')
+                if make_plots:
+                    self.plot_water(water_df, sim_index=index)
+    
     def plot_water(self, water_df, sim_index):
         fig, (ax1, ax2) = plt.subplots(2, 1, sharex='col', sharey='row')
         # fig.set_size_inches(6,5)
@@ -196,10 +196,41 @@ class TrajProcessor():
         filepath = Path.cwd()/'PLOTs'
         filepath.mkdir(parents=True, exist_ok=True)
         plt.savefig(filepath/f"surf_comps_{sim_index}.png", dpi=300, bbox_inches='tight')
+    
+    def plot_density_profile(self):
+        traj_all = []
+        for traj in self.trajs:
+            for im in traj[100:]:
+                traj_all.append(im)
+        max_Ir_Z = self._identify_cus_bri(idx=0)[0]
+        zmax = np.ceil(traj_all[0].get_cell()[2,2])-max_Ir_Z
+        z_O = []
+        for im in traj_all:
+            ind_O = [atom.index for atom in im if (atom.symbol=='O' and atom.z>0.5+max_Ir_Z)]
+            z_O.append(np.array(im.get_positions()[ind_O, 2]))
+        z_O = np.hstack(z_O)
+        z_O = [z-max_Ir_Z for z in z_O]
+        # For conversion of number to mass density
+        from scipy.constants import N_A
+        Norm_H2O = (1./18.)*N_A/(10**(24))
+        Vbin = self.init_strucs[0].get_volume()/self.init_strucs[0].get_cell()[2,2]*0.05
+        z_O = np.asarray(z_O)
+        hist, bins = np.histogram(z_O, range=[0, zmax], bins=int(zmax/0.05))
+        hist = np.insert(hist, 0, 0)
+        rho = hist/len(traj_all)/Vbin/Norm_H2O #Output as g/ml
+        plt.plot(bins, rho)
+        plt.xlabel = "$Z-distance$ $in$ $\AA$"
+        plt.ylabel = "$Density$ $of$ $O$ $in$ $g/ml$"
+        plt.xlim(0,15)
+        plt.yticks(range(0, int(np.ceil(max(rho))),1))
+        filepath = Path.cwd()/'TRENDs'
+        filepath.mkdir(parents=True, exist_ok=True)
+        plt.savefig(filepath/f"density_allO.png", dpi=300, bbox_inches='tight')
+
 # %%
 def main():
     #sim_indices = int(input("Provide initial index:\n")), int(input("Provide final index:\n"))
-    sim_indices = 19, 19
+    sim_indices = 18, 19
     sim_paths, init_struc_paths = [], []
     for ind in range(sim_indices[0], 1+sim_indices[1], 1):
         sim_paths.append(f"sim_{ind}/newmd.traj")
@@ -209,8 +240,10 @@ def main():
                                     init_struc_paths=init_struc_paths,
                                     skip_n_frames=10)
     #simulationGroup.build_surf_compositions(make_plots=False)
-    simulationGroup.build_water_compositions(build_csv=False, make_plots=True)
-# %%
+    #simulationGroup.build_water_compositions(build_csv=False, make_plots=True)
+    simulationGroup.plot_density_profile()
+
 if __name__ == "__main__":
     main()
+
 # %%
