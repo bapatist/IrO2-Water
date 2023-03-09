@@ -8,7 +8,7 @@ from ase.io import read, write
 from ase.visualize import view
 from ase import Atoms
 
-def create_mix(water_box_files, slab_file, adsorbates_file=None):
+def create_mix(water_box_files, slab_file, idx, adsorbates_file=None):
     '''
     Puts surface adsorbate molecules in random cus sites of slab
     Puts O/OH on all bridge site randomly
@@ -18,7 +18,7 @@ def create_mix(water_box_files, slab_file, adsorbates_file=None):
     '''
     #adsorbates = read(adsorbates_file, ":")
     slab = read(slab_file)
-    water = read(random.choice(water_box_files))
+    water = read(water_box_files[idx%10])
     '''
     #Cus site additions
     max_Ir_Z = max([atom.z for atom in slab if atom.symbol == 'Ir'])
@@ -68,7 +68,7 @@ cwd                 = Path(os.getcwd())
 run_file            = cwd/"run.sh"
 lmps_template_file  = cwd/"template.inp"
 
-water_box_files     = glob.glob(str(cwd/"../W400_boxes/*xyz"))
+water_box_files     = glob.glob(str(cwd/"../../W400_boxes/*xyz"))
 #adsorbate_file      = "/ptmp/nbapat/surf/coverage/rand_cov_iter3/adsorbates.xyz"
 slab_file           = cwd/"pristinex4.xyz"
 
@@ -77,7 +77,9 @@ for i in range(sim_indexes[0],sim_indexes[1],1):
     path_to_sim = cwd/f"sim_{i}"
     # Writing a random starting structure to sim folder
     mix = create_mix(water_box_files=water_box_files,
-                     slab_file=slab_file)
+                     slab_file=slab_file,
+                     idx = i
+                     )
     write(path_to_sim / "mix.xyz", mix)
     write_lammps_data(path_to_sim / "mix.lmps", mix, atom_style='full')
     # Writing lammps input in sim folder with random seed
