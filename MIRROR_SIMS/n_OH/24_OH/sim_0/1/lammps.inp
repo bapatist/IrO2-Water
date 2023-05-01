@@ -1,0 +1,43 @@
+log log.lammps
+#------------------------------- INITIALIZATION -------------------------------#
+  
+units           metal
+dimension       3
+boundary        p p p
+atom_style      full
+newton          on
+
+#------------------------------- ATOM DEFINITION ------------------------------#
+
+#read_data       mix.lmps
+read_restart    ../0/restart.250000
+mass            1 1.008
+mass            2 192.217
+mass            3 15.999 
+
+#-------------------------------- SETTINGS ------------------------------------#
+
+neighbor        2.0 bin
+comm_modify     vel yes
+
+#--------------------------- INTERATOMIC INTERACTIONS -------------------------#
+
+pair_style      quip
+pair_coeff      * * /ptmp/nbapat/surf/iter3/GAP/GAP_22.xml "IP GAP label=GAP_2023_1_27_60_17_0_38_909" 1 77 8
+
+#---------------------------------DYNAMICS-------------------------------------#
+timestep        0.001 # 1 femtosecond
+
+#reset_timestep  0
+
+fix             myNVT all nvt temp 300 300 $(100.0*dt)
+fix             myMOM_zeroer all momentum 100 linear 1 1 1 rescale
+thermo_style    custom time temp pe ke etotal
+thermo          100
+dump            dump_xyz all xyz 100 movie.xyz
+dump_modify     dump_xyz element H Ir O
+restart         10000 tmp.restart
+run             250000
+write_restart   restart.*
+
+quit
