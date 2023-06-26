@@ -1,4 +1,5 @@
 #%%
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 import numpy as np
@@ -6,7 +7,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 import matplotlib
 font = {'size'   : 18}
-#matplotlib.rc('text', usetex=True)
+matplotlib.rc('text', usetex=True)
 matplotlib.rc('font', **font)
 # %%
 @dataclass
@@ -49,29 +50,50 @@ class TrajProcessor():
 
     def _identify_cus_bri(self, idx):
         atoms = self.init_strucs[idx]
-        max_Ir_Z = max([atom.z for atom in atoms if atom.symbol == 'Ir'])
-        #These Iridiums are expected to stay put
-        Ir_bri = np.array([atom.index for atom in atoms if (atom.symbol == 'Ir') and (atom.z == max_Ir_Z)])
-        Ir_cus = np.array([atom.index for atom in atoms if (atom.symbol == 'Ir' and (np.round(max_Ir_Z - atom.z, 4) == 0.0953) and atom.index not in Ir_bri)])
-        #Everything else can be dynamic and is counted in a general way
-        O_cus = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_cus, mic=True))<2.4 and min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.4)])
-        return max_Ir_Z, Ir_bri, Ir_cus, O_cus
+        O_cus, O_bri = [], []
+        O_cus_Z = [np.round(self.iridium_surf_Zs[0]+1.99074, 2),
+                   np.round(self.iridium_surf_Zs[1]-2.00916, 2)]
+        O_bri_Z = [np.round(self.iridium_surf_Zs[0]+1.23, 2),
+                   np.round(self.iridium_surf_Zs[1]-1.23, 2)]
+        for atom in atoms:
+            if atom.symbol == 'O':
+                if np.round(atom.z, 2) in O_cus_Z:
+                    O_cus.append(atom.index)
+                elif np.round(atom.z, 2) in O_bri_Z:
+                    O_bri.append(atom.index)
+        return O_cus, O_bri
 
-    def _count_bridge(self, atoms, Ir_bri, Ir_cus, max_Ir_Z):
-        O_bri = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_bri, mic=True))<2.4 and min(atoms.get_distances(atom.index, Ir_cus, mic=True))>2.4)])
-        H_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'H') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
-        H_bri = np.array([atom.index for atom in atoms if (atom.index in H_interface ) and min(atoms.get_distances(atom.index, O_bri, mic=True))<1.1])
-        bri_O_H2, bri_O_H, bri_O_c =[], [], []
+    def _count_bridge(self, atoms, O_bri):
+        H_interface = np.array([atom.index for atom in atoms if
+                                (atom.symbol == 'H') and
+                                ((atom.z < self.iridium_surf_Zs[0]+4.0) or
+                                 (atom.z > self.iridium_surf_Zs[1]-4.0))])
+        H_bri = np.array([atom.index for atom in atoms if
+                            atom.index in H_interface and
+                            min(atoms.get_distances(atom.index, O_bri, mic=True))<=1.1])
+        bri_OH2, bri_OH, bri_Oc = [], [], []
         if len(H_bri)>0:
-            bri_O_H2 = [atom.index for atom in atoms if atom.index in O_bri and len([d for d in atoms.get_distances(atom.index, H_bri, mic=True) if d<1.1])==2]
-            bri_O_H = [atom.index for atom in atoms if atom.index in O_bri and len([d for d in atoms.get_distances(atom.index, H_bri, mic=True) if d<1.1])==1]
-            bri_O_c = [atom.index for atom in atoms if atom.index in O_bri and len([d for d in atoms.get_distances(atom.index, H_bri, mic=True) if d<1.1])==0]
+            for atom in atoms:
+                if atom.index in O_bri:
+                    no_of_H = len([d for d in
+                            atoms.get_distances(atom.index, H_bri, mic=True)
+                            if d<1.1])
+                    if no_of_H==2:
+                        bri_OH2.append(atom.index)
+                    if no_of_H==1:
+                        bri_OH.append(atom.index)
+                    if no_of_H==0:
+                        bri_Oc.append(atom.index)
         else:
-            bri_O_c = O_bri
-        return atoms.info['time'], atoms.info['md_energy'], O_bri, bri_O_H2, bri_O_H, bri_O_c
+            bri_Oc = O_bri
+        return atoms.info['time'], atoms.info['md_energy'], bri_OH2, bri_OH, bri_Oc
 
     def _count_cus(self, atoms, Ir_bri, Ir_cus, max_Ir_Z):
-        O_cus = np.array([atom.index for atom in atoms if (atom.symbol == 'O' and atom.z > max_Ir_Z and min(atoms.get_distances(atom.index, Ir_cus, mic=True))<2.4 and min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.4)])
+        O_cus = np.array([atom.index for atom in
+                          atoms if (atom.symbol == 'O' and
+                          atom.z > max_Ir_Z and
+                          min(atoms.get_distances(atom.index, Ir_cus, mic=True))<2.4 and
+                          min(atoms.get_distances(atom.index, Ir_bri, mic=True))>2.4)])
         H_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'H') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
         O_interface = np.array([atom.index for atom in atoms if (atom.symbol == 'O') and (atom.z < max_Ir_Z+4.0) and (atom.z > max_Ir_Z)])
 
@@ -88,16 +110,22 @@ class TrajProcessor():
                                 path_save_plot=None):
         for i, index in enumerate(range(self.sim_indices[0], 1+self.sim_indices[1], 1)):
             print("Building surface comp df for index ", index)
-            _max_Ir_Z, _Ir_bri, _Ir_cus, _O_cus = self._identify_cus_bri(idx=i)
+            O_cus_all, O_bri_all = self._identify_cus_bri(idx=i)
+            print("Identified ", len(O_bri_all), "bridge and ", len(O_cus_all), "cus oxygens")
             bri_df, cus_df = [], []
             for atoms in self.trajs[i][::self.skip_n_frames]:
                 free_ener = self.calc_free_energy(atoms)
-                time, ener, O_bri, bri_O_H2, bri_O_H, bri_O_c =  self._count_bridge(atoms=atoms, Ir_bri=_Ir_bri, Ir_cus=_Ir_cus, max_Ir_Z=_max_Ir_Z)
-                append_this_bri = pd.DataFrame([{'Time': time, 'Tot_Energy': ener, 'Free_Energy':free_ener, 'OH2': len(bri_O_H2), 'OH': len(bri_O_H), 'O': len(bri_O_c), 'All': len(O_bri)}])
-                bri_df.append(append_this_bri)
-                time, ener, O_cus, cus_O_H2, cus_O_H, cus_O_c, cus_O_O =  self._count_cus(atoms=atoms, Ir_bri=_Ir_bri, Ir_cus=_Ir_cus, max_Ir_Z=_max_Ir_Z)
-                append_this_cus = pd.DataFrame([{'Time': time, 'Tot_Energy': ener, 'Free_Energy':free_ener, 'OH2': len(cus_O_H2), 'OH': len(cus_O_H), 'O': len(cus_O_c), 'OO': len(cus_O_O), 'All': len(O_cus)}])
-                cus_df.append(append_this_cus)
+                time, ener, bri_O_H2, bri_O_H, bri_O_c =  self._count_bridge(atoms=atoms, O_bri=O_bri_all)
+                bri_df.append(pd.DataFrame([{'Time': time,
+                                             'Tot_Energy': ener,
+                                             'Free_Energy':free_ener,
+                                             'OH2': len(bri_O_H2),
+                                             'OH': len(bri_O_H),
+                                             'O': len(bri_O_c),
+                                             'All': len(O_bri_all)}]))
+                # time, ener, O_cus, cus_O_H2, cus_O_H, cus_O_c, cus_O_O =  self._count_cus(atoms=atoms, Ir_bri=_Ir_bri, Ir_cus=_Ir_cus, max_Ir_Z=_max_Ir_Z)
+                # append_this_cus = pd.DataFrame([{'Time': time, 'Tot_Energy': ener, 'Free_Energy':free_ener, 'OH2': len(cus_O_H2), 'OH': len(cus_O_H), 'O': len(cus_O_c), 'OO': len(cus_O_O), 'All': len(O_cus)}])
+                # cus_df.append(append_this_cus)
             bri_df = pd.concat(bri_df)
             cus_df = pd.concat(cus_df)
             filepath = Path.cwd()/'CSVs'
@@ -254,26 +282,38 @@ class TrajProcessor():
 
     def plot_density_profile(self):
         print("Plotting density profile")
+        print("WARNING: For Density Profile, try to provide only 1 simulation to avoid wrong surface-Z referencing")
+        # Surface Z for the first traj
+        ref_im = self.trajs[0][0]
+        cell_z = ref_im.get_cell()[2,2]
+        surf_Zs = [0,999]
+        for atom in ref_im:
+            if atom.symbol == 'Ir':
+                if atom.z < cell_z/2:
+                    surf_Zs[0] = max(surf_Zs[0], atom.z)
+                if atom.z > cell_z/2:
+                    surf_Zs[1] = min(surf_Zs[1], atom.z)
+        print(f"Identified surfaces at Z={surf_Zs}")
         traj_all = []
         for traj in self.trajs:
             for im in traj[100:]:
                 traj_all.append(im)
         z_O, z_H = [], []
         for im in traj_all:
-            ind_O = [atom.index for atom in im if (atom.symbol=='O' and
-                                                   0.5+self.iridium_surf_Zs[0]<atom.z<self.iridium_surf_Zs[1]-0.5)]
-            z_O.append(np.array(im.get_positions()[ind_O, 2]))
-            ind_H = [atom.index for atom in im if (atom.symbol=='H' and
-                                                   0.5+self.iridium_surf_Zs[0]<atom.z<self.iridium_surf_Zs[1]-0.5)]
-            z_H.append(np.array(im.get_positions()[ind_H, 2]))
+            for atom in im:
+                if atom.symbol == 'O' and 0.5+surf_Zs[0]<atom.z<surf_Zs[1]-0.5:
+                    z_O.append(atom.position[-1])
+                elif atom.symbol == 'H' and 0.5+surf_Zs[0]<atom.z<surf_Zs[1]-0.5:
+                    z_H.append(atom.position[-1])
         z_O, z_H = np.hstack(z_O), np.hstack(z_H)
-        z_O = [z-self.iridium_surf_Zs[0] for z in z_O]
-        z_H = [z-self.iridium_surf_Zs[0] for z in z_H]
+        
+        z_O = [z-surf_Zs[0] for z in z_O]
+        z_H = [z-surf_Zs[0] for z in z_H]
         # For conversion of number to mass density
         from scipy.constants import N_A
         Norm_H2O = (1./18.)*N_A/(10**(24))
-        Z_box = self.init_strucs[0].get_cell()[2,2]
-        Vbin = (self.init_strucs[0].get_volume()/Z_box)*0.05
+        Z_box = ref_im.get_cell()[2,2]
+        Vbin = (ref_im.get_volume()/Z_box)*0.05
         z_O, z_H = np.asarray(z_O), np.asarray(z_H)
         hist_O, bins_O = np.histogram(z_O, range=[0, Z_box],
                                       bins=int(Z_box/0.05))
@@ -284,17 +324,21 @@ class TrajProcessor():
 #        rho_H = hist_H/len(traj_all)/Vbin/Norm_H2O #Output as g/ml
         rho_O = hist_O/len(traj_all)/Vbin #Output as number_count
         rho_H = hist_H/len(traj_all)/Vbin #Output as number_count
-        from matplotlib.ticker import MultipleLocator
-        plt.plot(bins_O, rho_O, lw=0.5, color='k', label='O')
-        plt.plot(bins_H, rho_H, lw=0.5, color='gray', label='H')
-        plt.xlabel('Z-distance in Ang.')
-        plt.ylabel('Number Density')
-        plt.xlim(0, self.iridium_surf_Zs[1]-self.iridium_surf_Zs[0])
-        plt.xticks(np.linspace(0, self.iridium_surf_Zs[1]-self.iridium_surf_Zs[0], 5))
-        plt.legend()
-#        plt.yticks(range(0, int(np.ceil(max(rho_O))),1))
+
+        d_profile_arr = np.asarray([bins_O, rho_O, rho_H])
         filepath = Path.cwd()/'TRENDs'
         filepath.mkdir(parents=True, exist_ok=True)
+        np.savetxt(filepath/"density_prof.csv", d_profile_arr, delimiter=',', fmt='%.3f')
+
+        from matplotlib.ticker import MultipleLocator
+        plt.plot(bins_O, rho_O, lw=1.0, color='r', label='O')
+        plt.plot(bins_H, rho_H, lw=1.0, color='b', label='H')
+        plt.xlabel('$\mathrm {Z-distance\ in\ \AA}$')
+        plt.ylabel('$\mathrm {Number\ density}$')
+        plt.xlim(0, surf_Zs[1]-surf_Zs[0])
+        plt.xticks(np.linspace(0, surf_Zs[1]-surf_Zs[0], 5))
+        plt.legend()
+#        plt.yticks(range(0, int(np.ceil(max(rho_O))),1))
         plt.savefig(filepath/f"density.png", dpi=300, bbox_inches='tight')
 # %%
 def main():
@@ -307,7 +351,7 @@ def main():
     simulationGroup = TrajProcessor(sim_indices=sim_indices,
                                     sim_paths=sim_paths,
                                     init_struc_paths=init_struc_paths,
-                                    iridium_surf_Zs = [4.39915211, 41.15683543],
+                                    iridium_surf_Zs = [6.03962973, 39.16784865],
                                     skip_n_frames=200)
 #    simulationGroup.build_surf_compositions(path_save_csv=Path.cwd()/'CSVs',
 #                                            make_plots_bars=False, make_plots_lines=True,
