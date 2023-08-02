@@ -1,0 +1,4 @@
+Fit on lowF = <10ev/A strucs filte
+
+When using evaluate_config on the GPU model (the default .model file), use flags --batch_size=10 (same as training) and also use flag --device=cuda
+For CPU model, convert it to CPU model by running "model_to_cpu" script. no need for flags just ensure that you provide the file name of the CPU model in --model
