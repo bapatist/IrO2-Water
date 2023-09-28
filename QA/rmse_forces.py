@@ -2,7 +2,7 @@
 #%%
 import numpy as np
 from ase.io import read
-from wfl.plotting.plot_ef_correlation import extract_energies_per_atom, plot_energy, plot, extract_forces, plot_force_components, rms_text_for_plots
+# from wfl.plotting.plot_ef_correlation import extract_energies_per_atom, plot_energy, plot, extract_forces, plot_force_components, rms_text_for_plots
 from matplotlib import pyplot as plt
 import matplotlib
 font = {'size': 18}
@@ -23,6 +23,30 @@ def plot_scatter(x,y, gap_or_mace):
     ax.set_ylabel(f'{gap_or_mace} forces in eV/\AA')
     ax.set_xlabel('DFT forces in eV/\AA')
     fig.set_size_inches(8, 6.5)
+
+def plot_hexbin(x, y, gap_or_mace):
+    print(f"Total points used for scatter = {len(x)}")
+    fig, ax = plt.subplots()
+    hb = ax.hexbin(x, y, gridsize=100, 
+                   bins='log', mincnt=1,
+                   cmap='viridis')  # You can adjust the gridsize and colormap
+    # Add a colorbar
+    cbar = plt.colorbar(hb)
+    cbar.set_label('$\mathrm {Density}$')
+
+    # x=y line
+    for_limits = np.concatenate((x, y))
+    elim = (for_limits.min() - 0.01, for_limits.max() + 0.01)
+    ax.set_xlim(elim)
+    ax.set_ylim(elim)
+    ax.plot(elim, elim, c='k')
+    
+    # Set labels
+    ax.set_ylabel("$\mathrm {MACE_{(F_x,\ F_y,\ F_z)},\ eV/\AA}$")
+    ax.set_xlabel("$\mathrm {DFT_{(F_x,\ F_y,\ F_z)},\ eV/\AA}$")
+    fig.set_size_inches(8, 6.5)
+    plt.savefig("PLOTs/scatter.png", dpi=200, bbox_inches='tight')
+    plt.show()
 
 def _rms_ener(x_ref, x_pred, MAE=False):
     """ Takes two datasets of the same shape and returns a dictionary containing RMS error data"""
@@ -47,7 +71,7 @@ def _perc_err(ground_truth, predictions, low_cap = 1.0):
             ground_truth[i] = low_cap
     percentage_error = (absolute_error / np.abs(ground_truth)) * 100
     return format(np.mean(percentage_error), '.2f')
-#%%
+
 def rmse_forces(samples_file, gap_or_mace="GAP", config_type=None, error_type="rmse", plot=True):
     train_set = read(samples_file, ":")
     if config_type!=None:
@@ -71,20 +95,22 @@ def rmse_forces(samples_file, gap_or_mace="GAP", config_type=None, error_type="r
               f"containing config types: {set(config_types)}\n",
               f"% error forces= {_perc_err(DFT_forces, GAP_forces)}")
     if plot:
-        plot_scatter(DFT_forces, GAP_forces, gap_or_mace=gap_or_mace)
+        plot_hexbin(DFT_forces, GAP_forces, gap_or_mace=gap_or_mace)
+        # plot_scatter(DFT_forces, GAP_forces, gap_or_mace=gap_or_mace)
     # if save_plot:
     #     plt.savefig(save, dpi=300, bbox_inches='tight')
 
-#%% FORCE RMSEs
+# FORCE RMSEs
 # options for config type: 'surf_sample', 'water', 'slab', 'dimer', None=All
 gap_or_mace = "GAP"
 rmse_forces(gap_or_mace=gap_or_mace,
             samples_file="TEST_SET/I4/test_lowF.xyz",
             # samples_file="TRAIN_SET/I4/ts_ALL.xyz",
             config_type='surf',
-            error_type="rmse",
-            plot=True) # "percentage" or "rmse"
+            error_type="rmse", # "percentage" or "rmse"
+            plot=True) 
 # %%
+gap_or_mace = "MACE"
 rmse_forces(gap_or_mace=gap_or_mace,
             samples_file="MACE_TRAIN+TEST/test_all_I4_MACE_GPU.xyz",
             config_type='surf',

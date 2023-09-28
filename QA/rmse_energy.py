@@ -58,7 +58,7 @@ def get_rmse_energy(samples_file, config_type=None, test_set_file=None, gap_or_m
         dft_ener_test  = extract_energies_per_atom(test_set, "DFT_energy", e0 = None)
         print("For test set having", f"{len(test_set)} structures \n",
             f"RMSE energy= {rms_ener(dft_ener_test, gap_ener_test)}")
-        # plot_scatter(gap_ener_test, dft_ener_test)
+        plot_scatter(gap_ener_test, dft_ener_test)
 
 def get_perc_err_energy(samples_file, config_type=None, test_set_file=None, gap_or_mace="GAP"):
     train_set = read(samples_file, ":")
