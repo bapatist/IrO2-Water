@@ -1,0 +1,1114 @@
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_kf3rpqdr DFT_energy=-1.14203904 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000     -28.64015203       0.00000472       0.00000294       0.00400000
+Ir       1.10825000       0.00000000       0.00000000      28.64015203      -0.00000472      -0.00000294       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_8y08ho4i DFT_energy=-4.17185223 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000     -11.93220480       0.00008273      -0.00010437       0.00400000
+Ir       1.26596250       0.00000000       0.00000000      11.93220480      -0.00008273       0.00010437       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_8csagpw1 DFT_energy=-5.29432256 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000      -3.57863669       0.00062967      -0.00010605       0.00400000
+Ir       1.42367500       0.00000000       0.00000000       3.57863669      -0.00062967       0.00010605       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_znfy0gkx DFT_energy=-5.48097624 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       0.49730439       0.00009984       0.00110514       0.00400000
+Ir       1.58138750       0.00000000       0.00000000      -0.49730439      -0.00009984      -0.00110514       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_g3epz9pp DFT_energy=-5.22531431 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       2.36731662      -0.00008243      -0.00010894       0.00400000
+Ir       1.73910000       0.00000000       0.00000000      -2.36731662       0.00008243       0.00010894       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_nsloi8p2 DFT_energy=-4.77840525 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       3.08433166       0.00003718       0.00002853       0.00400000
+Ir       1.89681250       0.00000000       0.00000000      -3.08433166      -0.00003718      -0.00002853       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_661vsz5u DFT_energy=-4.27317682 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       3.22249811      -0.00002167      -0.00001401       0.00400000
+Ir       2.05452500       0.00000000       0.00000000      -3.22249811       0.00002167       0.00001401       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_bojuioor DFT_energy=-3.77438571 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       3.05508445      -0.00001390       0.00007022       0.00400000
+Ir       2.21223750       0.00000000       0.00000000      -3.05508445       0.00001390      -0.00007022       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_dcgck8f5 DFT_energy=-3.31301714 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       2.76426119      -0.00012098      -0.00004592       0.00400000
+Ir       2.36995000       0.00000000       0.00000000      -2.76426119       0.00012098       0.00004592       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_niiwtvj9 DFT_energy=-2.90174687 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       2.43896953       0.00011927       0.00016817       0.00400000
+Ir       2.52766250       0.00000000       0.00000000      -2.43896953      -0.00011927      -0.00016817       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_31x7pr6m DFT_energy=-2.53991824 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       2.13505257       0.00000156      -0.00025429       0.00400000
+Ir       2.68537500       0.00000000       0.00000000      -2.13505257      -0.00000156       0.00025429       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ogt3q47y DFT_energy=-2.22231341 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       1.87595591      -0.00004069       0.00006421       0.00400000
+Ir       2.84308750       0.00000000       0.00000000      -1.87595591       0.00004069      -0.00006421       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_vmlkq5kf DFT_energy=-1.94409327 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       1.63125794      -0.00004045       0.00001207       0.00400000
+Ir       3.00080000       0.00000000       0.00000000      -1.63125794       0.00004045      -0.00001207       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_lmax233s DFT_energy=-1.70277793 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       1.40988390       0.00005124       0.00003645       0.00400000
+Ir       3.15851250       0.00000000       0.00000000      -1.40988390      -0.00005124      -0.00003645       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_u0e8390v DFT_energy=-1.49760636 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       1.19490958      -0.00018750       0.00183586       0.00400000
+Ir       3.31622500       0.00000000       0.00000000      -1.19490958       0.00018750      -0.00183586       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_4lu9s5gz DFT_energy=-1.25282325 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       0.92031987      -0.00127158      -0.00093715       0.00400000
+Ir       3.55279375       0.00000000       0.00000000      -0.92031987       0.00127158       0.00093715       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_i_s0il6l DFT_energy=-1.12955798 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       0.76515753       0.00132823       0.00670544       0.00400000
+Ir       3.71050625       0.00000000       0.00000000      -0.76515753      -0.00132823      -0.00670544       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_8e755wz7 DFT_energy=-1.02381804 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       0.63409151      -0.00048763      -0.00251929       0.00400000
+Ir       3.86821875       0.00000000       0.00000000      -0.63409151       0.00048763       0.00251929       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_orc8s80y DFT_energy=-0.92216454 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       0.52020966       0.00454088      -0.00344295       0.00400000
+Ir       4.02593125       0.00000000       0.00000000      -0.52020966      -0.00454088       0.00344295       0.01600000
+2
+Lattice="25.575000000000003 0.0 0.0 0.0 25.575000000000003 0.0 0.0 0.0 25.575000000000003" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP__5l3c55e DFT_energy=-0.84958108 pbc="F F F"
+H        0.00000000       0.00000000       0.00000000       0.42635084      -0.00053182       0.00010813       0.00400000
+Ir       4.18364375       0.00000000       0.00000000      -0.42635084       0.00053182      -0.00010813       0.01600000
+2
+Lattice="31.108249999999998 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_kwuvf2u8 DFT_energy=22.08427502 pbc="F F F"
+O       14.53103124      15.00000000      15.00000000    -175.57511232       0.00000004       0.00000113       0.00800000
+Ir      15.63928124      15.00000000      15.00000000     175.57511232      -0.00000004      -0.00000113       0.01600000
+2
+Lattice="31.27426316 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_wwa2saxm DFT_energy=2.28026932 pbc="F F F"
+O       14.46078086      15.00000000      15.00000000     -74.86390514      -0.00000001       0.00000024       0.00800000
+Ir      15.73504402      15.00000000      15.00000000      74.86390514       0.00000001      -0.00000024       0.01600000
+2
+Lattice="31.44027632 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_c6azwtk3 DFT_energy=-5.69023231 pbc="F F F"
+O       14.39053048      15.00000000      15.00000000     -27.04181677       0.00000001      -0.00000112       0.00800000
+Ir      15.83080680      15.00000000      15.00000000      27.04181677      -0.00000001       0.00000112       0.01600000
+2
+Lattice="32.27034211 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_vas9yic7 DFT_energy=-5.28430878 pbc="F F F"
+O       14.03927857      15.00000000      15.00000000       5.48873894      -0.00258639       0.00284500       0.00800000
+Ir      16.30962068      15.00000000      15.00000000      -5.48873894       0.00258639      -0.00284500       0.01600000
+2
+Lattice="32.43635526 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_jvne7h5y DFT_energy=-4.48896662 pbc="F F F"
+O       13.96902819      15.00000000      15.00000000       4.63909539       0.00017229       0.00057900       0.00800000
+Ir      16.40538345      15.00000000      15.00000000      -4.63909539      -0.00017229      -0.00057900       0.01600000
+2
+Lattice="32.60236842 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_a22rcu_c DFT_energy=-3.79804704 pbc="F F F"
+O       13.89877781      15.00000000      15.00000000       3.77978767       0.00005474      -0.00000789       0.00800000
+Ir      16.50114623      15.00000000      15.00000000      -3.77978767      -0.00005474       0.00000789       0.01600000
+2
+Lattice="32.768381579999996 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_tq7gz82x DFT_energy=-3.23244249 pbc="F F F"
+O       13.82852743      15.00000000      15.00000000       3.11025887      -0.00000719      -0.00001210       0.00800000
+Ir      16.59690901      15.00000000      15.00000000      -3.11025887       0.00000719       0.00001210       0.01600000
+2
+Lattice="32.93439474 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_a_7vh4es DFT_energy=-2.77331032 pbc="F F F"
+O       13.75827705      15.00000000      15.00000000       2.54295939      -0.00003891       0.00001779       0.00800000
+Ir      16.69267179      15.00000000      15.00000000      -2.54295939       0.00003891      -0.00001779       0.01600000
+2
+Lattice="33.10040789 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_q6a4mue_ DFT_energy=-2.39097523 pbc="F F F"
+O       13.68802667      15.00000000      15.00000000       2.06577541      -0.00009367      -0.00016854       0.00800000
+Ir      16.78843456      15.00000000      15.00000000      -2.06577541       0.00009367       0.00016854       0.01600000
+2
+Lattice="33.26642105 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_fq451bkt DFT_energy=-2.08399104 pbc="F F F"
+O       13.61777629      15.00000000      15.00000000       1.67529821      -0.00011055      -0.00002404       0.00800000
+Ir      16.88419734      15.00000000      15.00000000      -1.67529821       0.00011055       0.00002404       0.01600000
+2
+Lattice="33.43243421 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_zv0nswaf DFT_energy=-1.84124863 pbc="F F F"
+O       13.54752591      15.00000000      15.00000000       1.33304354       0.00002029      -0.00000400       0.00800000
+Ir      16.97996012      15.00000000      15.00000000      -1.33304354      -0.00002029       0.00000400       0.01600000
+2
+Lattice="33.59844737 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_6hf3meby DFT_energy=-1.63536216 pbc="F F F"
+O       13.47727552      15.00000000      15.00000000       1.09745908       0.00085127       0.00025022       0.00800000
+Ir      17.07572289      15.00000000      15.00000000      -1.09745908      -0.00085127      -0.00025022       0.01600000
+2
+Lattice="33.76446053 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_0ocehd5v DFT_energy=-1.47724087 pbc="F F F"
+O       13.40702514      15.00000000      15.00000000       0.90785761       0.00002172       0.00005416       0.00800000
+Ir      17.17148567      15.00000000      15.00000000      -0.90785761      -0.00002172      -0.00005416       0.01600000
+2
+Lattice="33.93047368 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_xk2lo6wg DFT_energy=-1.35434598 pbc="F F F"
+O       13.33677477      15.00000000      15.00000000       0.68703736      -0.00089025       0.00020116       0.00800000
+Ir      17.26724845      15.00000000      15.00000000      -0.68703736       0.00089025      -0.00020116       0.01600000
+2
+Lattice="34.09648684 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_pyprgo57 DFT_energy=-1.27403637 pbc="F F F"
+O       13.26652438      15.00000000      15.00000000       0.51733942      -0.00029778      -0.00262171       0.00800000
+Ir      17.36301122      15.00000000      15.00000000      -0.51733942       0.00029778       0.00262171       0.01600000
+2
+Lattice="34.2625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_bwx_yxoc DFT_energy=-1.19112067 pbc="F F F"
+O       13.19627400      15.00000000      15.00000000       0.40516669      -0.00000602      -0.00014192       0.00800000
+Ir      17.45877400      15.00000000      15.00000000      -0.40516669       0.00000602       0.00014192       0.01600000
+2
+Lattice="31.43 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_4h0_6o8e DFT_energy=15.5309336 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000     -91.71013688      -0.00000010      -0.00000045       0.01600000
+Ir      16.43000000      15.00000000      15.00000000      91.71013688       0.00000010       0.00000045       0.01600000
+2
+Lattice="31.64421053 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_w9armsf_ DFT_energy=1.85802103 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000     -42.87470780      -0.00000000      -0.00000087       0.01600000
+Ir      16.64421053      15.00000000      15.00000000      42.87470780       0.00000000       0.00000087       0.01600000
+2
+Lattice="31.85842105 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_5b7_ggg1 DFT_energy=-4.31883475 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000     -16.99473589      -0.00000001      -0.00000029       0.01600000
+Ir      16.85842105      15.00000000      15.00000000      16.99473589       0.00000001       0.00000029       0.01600000
+2
+Lattice="32.501052630000004 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_xun568wg DFT_energy=-5.75838256 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       3.91449098      -0.00000118      -0.00000103       0.01600000
+Ir      17.50105263      15.00000000      15.00000000      -3.91449098       0.00000118       0.00000103       0.01600000
+2
+Lattice="32.71526316 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_01yuw4jv DFT_energy=-4.8678166 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       4.12551288      -0.00000037       0.00000065       0.01600000
+Ir      17.71526316      15.00000000      15.00000000      -4.12551288       0.00000037      -0.00000065       0.01600000
+2
+Lattice="32.92947368 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_q_z_hi16 DFT_energy=-4.02570534 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       3.65404686      -0.00000017       0.00000008       0.01600000
+Ir      17.92947368      15.00000000      15.00000000      -3.65404686       0.00000017      -0.00000008       0.01600000
+2
+Lattice="33.14368421 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_kp62tvmd DFT_energy=-3.38233719 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       2.98398825      -0.00000820      -0.00012750       0.01600000
+Ir      18.14368421      15.00000000      15.00000000      -2.98398825       0.00000820       0.00012750       0.01600000
+2
+Lattice="33.35789474 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_hwfovuo9 DFT_energy=-2.86411358 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       2.40477427       0.00032244      -0.00015496       0.01600000
+Ir      18.35789474      15.00000000      15.00000000      -2.40477427      -0.00032244       0.00015496       0.01600000
+2
+Lattice="33.57210526 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_i97bhe9x DFT_energy=-2.42695154 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       1.95801715       0.00017642       0.00048197       0.01600000
+Ir      18.57210526      15.00000000      15.00000000      -1.95801715      -0.00017642      -0.00048197       0.01600000
+2
+Lattice="33.78631579 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_wpbfglbm DFT_energy=-2.04834621 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       1.63093265       0.00015148       0.00019005       0.01600000
+Ir      18.78631579      15.00000000      15.00000000      -1.63093265      -0.00015148      -0.00019005       0.01600000
+2
+Lattice="34.00052632 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ik_6wpjd DFT_energy=-1.77204316 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       1.33270030      -0.00029798       0.00037277       0.01600000
+Ir      19.00052632      15.00000000      15.00000000      -1.33270030       0.00029798      -0.00037277       0.01600000
+2
+Lattice="34.21473684 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_j2kkab26 DFT_energy=-1.52762662 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       1.07636481       0.00001688      -0.00001750       0.01600000
+Ir      19.21473684      15.00000000      15.00000000      -1.07636481      -0.00001688       0.00001750       0.01600000
+2
+Lattice="34.42894737 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_4uxhicld DFT_energy=-1.3439751 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       0.82358143      -0.00000956       0.00017938       0.01600000
+Ir      19.42894737      15.00000000      15.00000000      -0.82358143       0.00000956      -0.00017938       0.01600000
+2
+Lattice="34.64315789 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_sn9fraxy DFT_energy=-1.17748536 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       0.62755397       0.00028124       0.00127262       0.01600000
+Ir      19.64315789      15.00000000      15.00000000      -0.62755397      -0.00028124      -0.00127262       0.01600000
+2
+Lattice="34.85736842 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_tvcgea9s DFT_energy=-1.0858264 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       0.45121377      -0.00012196       0.00032052       0.01600000
+Ir      19.85736842      15.00000000      15.00000000      -0.45121377       0.00012196      -0.00032052       0.01600000
+2
+Lattice="35.07157895 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_85mpo1vt DFT_energy=-1.10075624 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       0.29916046      -0.00035294      -0.00001133       0.01600000
+Ir      20.07157895      15.00000000      15.00000000      -0.29916046       0.00035294       0.00001133       0.01600000
+2
+Lattice="35.28578947 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_hex6bx3m DFT_energy=-0.97921101 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       0.22094532      -0.00044402       0.00000201       0.01600000
+Ir      20.28578947      15.00000000      15.00000000      -0.22094532       0.00044402      -0.00000201       0.01600000
+2
+Lattice="35.5 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_nnmnou5j DFT_energy=-1.12054214 pbc="F F F"
+Ir      15.00000000      15.00000000      15.00000000       0.15563238       0.00155250       0.00097097       0.01600000
+Ir      20.50000000      15.00000000      15.00000000      -0.15563238      -0.00155250      -0.00097097       0.01600000
+2
+Lattice="30.35 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_7_bk058o DFT_energy=1.9882724 DFT_stress_FOO="-0.0010422631115202452 3.268260148113628e-06 3.268260148113628e-06 -0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000     -81.46406478      -0.00000000       0.00000003       0.00400000
+H       15.35000000      15.00000000      15.00000000      81.46406478       0.00000000      -0.00000003       0.00400000
+2
+Lattice="30.3875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_40_vv3u9 DFT_energy=-0.63077832 DFT_stress_FOO="-0.000840965111154367 2.876642899519209e-06 2.876642899519209e-06 0.0 -0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000     -59.42281513      -0.00000000      -0.00000005       0.00400000
+H       15.38750000      15.00000000      15.00000000      59.42281513       0.00000000       0.00000005       0.00400000
+2
+Lattice="30.425 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_9_5_ry__ DFT_energy=-2.54347689 DFT_stress_FOO="-0.0006732639373188387 2.4979642993427458e-06 2.4979642993427458e-06 -0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000     -43.41914262       0.00000000      -0.00000003       0.00400000
+H       15.42500000      15.00000000      15.00000000      43.41914262      -0.00000000       0.00000003       0.00400000
+2
+Lattice="30.4625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_4o6x2hnf DFT_energy=-3.93978926 DFT_stress_FOO="-0.0005332509468109698 2.162096210260716e-06 2.162096210260716e-06 0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000     -31.64117133      -0.00000000       0.00000004       0.00400000
+H       15.46250000      15.00000000      15.00000000      31.64117133       0.00000000      -0.00000004       0.00400000
+2
+Lattice="30.5 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_wkbw_rgh DFT_energy=-4.95424298 DFT_stress_FOO="-0.00041628568994283004 1.9111625773637055e-06 1.9111625773637055e-06 0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000     -22.88948526      -0.00000000       0.00000006       0.00400000
+H       15.50000000      15.00000000      15.00000000      22.88948526       0.00000000      -0.00000006       0.00400000
+2
+Lattice="30.5375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_33pcmcvs DFT_energy=-5.68385814 DFT_stress_FOO="-0.0003185239026551148 1.7293598995449778e-06 1.7293598995449778e-06 -0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000     -16.33535211      -0.00000000       0.00000001       0.00400000
+H       15.53750000      15.00000000      15.00000000      16.33535211       0.00000000      -0.00000001       0.00400000
+2
+Lattice="31.1125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_1r2nfqnq DFT_energy=-5.78885273 DFT_stress_FOO="0.00018662164090916687 9.097124381157366e-07 9.097124381157366e-07 0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.67367470      -0.00000000      -0.00000001       0.00400000
+H       16.11250000      15.00000000      15.00000000      -4.67367470       0.00000000       0.00000001       0.00400000
+2
+Lattice="31.15875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP__rc361a6 DFT_energy=-5.57162852 DFT_stress_FOO="0.00019565877190460624 8.7938494527307e-07 8.7938494527307e-07 0.0 -0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.71082924      -0.00000000       0.00000003       0.00400000
+H       16.15875000      15.00000000      15.00000000      -4.71082924       0.00000000      -0.00000003       0.00400000
+2
+Lattice="31.205 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_lf1hm4fi DFT_energy=-5.35379659 DFT_stress_FOO="0.00020279104424689908 8.672701760597305e-07 8.672701760597305e-07 -0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.70185088      -0.00000000       0.00000001       0.00400000
+H       16.20500000      15.00000000      15.00000000      -4.70185088       0.00000000      -0.00000001       0.00400000
+2
+Lattice="31.25125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_wld2mdi7 DFT_energy=-5.1373134 DFT_stress_FOO="0.00020809223881542238 8.624454895054227e-07 8.624454895054227e-07 -0.0 -0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.65480103      -0.00000000      -0.00000003       0.00400000
+H       16.25125000      15.00000000      15.00000000      -4.65480103       0.00000000       0.00000003       0.00400000
+2
+Lattice="31.2975 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_lml6xy7w DFT_energy=-4.92364736 DFT_stress_FOO="0.00021196326646585905 8.576707350241221e-07 8.576707350241221e-07 0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.58093065       0.00000000      -0.00000001       0.00400000
+H       16.29750000      15.00000000      15.00000000      -4.58093065      -0.00000000       0.00000001       0.00400000
+2
+Lattice="31.34375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_7orwumlv DFT_energy=-4.71392177 DFT_stress_FOO="0.00021454881162125618 8.405752415283278e-07 8.405752415283278e-07 -0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.48499083       0.00000000       0.00000003       0.00400000
+H       16.34375000      15.00000000      15.00000000      -4.48499083      -0.00000000      -0.00000003       0.00400000
+2
+Lattice="31.39 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ety_azes DFT_energy=-4.50900955 DFT_stress_FOO="0.00021601147183585218 8.308322457828241e-07 8.308322457828241e-07 0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.37386641      -0.00000000       0.00000000       0.00400000
+H       16.39000000      15.00000000      15.00000000      -4.37386641       0.00000000      -0.00000000       0.00400000
+2
+Lattice="31.43625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_kiiw_mbb DFT_energy=-4.30952506 DFT_stress_FOO="0.00021649372203846355 8.126320051717485e-07 8.126320051717485e-07 0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.25053283       0.00000000      -0.00000003       0.00400000
+H       16.43625000      15.00000000      15.00000000      -4.25053283      -0.00000000       0.00000003       0.00400000
+2
+Lattice="31.4825 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_m6talqyh DFT_energy=-4.11598445 DFT_stress_FOO="0.0002160654421652637 7.905807534300029e-07 7.905807534300029e-07 0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       4.11723643      -0.00000000      -0.00000000       0.00400000
+H       16.48250000      15.00000000      15.00000000      -4.11723643       0.00000000       0.00000000       0.00400000
+2
+Lattice="31.52875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_yqhckdey DFT_energy=-3.92878508 DFT_stress_FOO="0.00021493365059093992 7.798703237699872e-07 7.798703237699872e-07 0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       3.97760134      -0.00000000       0.00000003       0.00400000
+H       16.52875000      15.00000000      15.00000000      -3.97760134       0.00000000      -0.00000003       0.00400000
+2
+Lattice="31.575 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_jry74adk DFT_energy=-3.74815547 DFT_stress_FOO="0.00021307593405622114 7.658706188006312e-07 7.658706188006312e-07 0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       3.83273921      -0.00000000       0.00000000       0.00400000
+H       16.57500000      15.00000000      15.00000000      -3.83273921       0.00000000      -0.00000000       0.00400000
+2
+Lattice="31.62125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_9c4c2vd6 DFT_energy=-3.57430239 DFT_stress_FOO="0.00021061088747600828 7.622630265258706e-07 7.622692680349965e-07 0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       3.68474685       0.00000000      -0.00000003       0.00400000
+H       16.62125000      15.00000000      15.00000000      -3.68474685      -0.00000000       0.00000003       0.00400000
+2
+Lattice="31.6675 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_s1quas4t DFT_energy=-3.40733443 DFT_stress_FOO="0.0002075658049697089 7.57107539987891e-07 7.57107539987891e-07 0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       3.53512596      -0.00000000      -0.00000000       0.00400000
+H       16.66750000      15.00000000      15.00000000      -3.53512596       0.00000000       0.00000000       0.00400000
+2
+Lattice="31.71375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_o07h8t23 DFT_energy=-3.24728975 DFT_stress_FOO="0.0002040690743800423 7.508348233163783e-07 7.508348233163783e-07 -0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       3.38560253      -0.00000000       0.00000002       0.00400000
+H       16.71375000      15.00000000      15.00000000      -3.38560253       0.00000000      -0.00000002       0.00400000
+2
+Lattice="31.76 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_qcm3c6jg DFT_energy=-3.0941566 DFT_stress_FOO="0.00020015850052778405 7.551040155584824e-07 7.550977740493566e-07 -0.0 -0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       3.23696564       0.00000000       0.00000001       0.00400000
+H       16.76000000      15.00000000      15.00000000      -3.23696564      -0.00000000      -0.00000001       0.00400000
+2
+Lattice="31.80625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_qwzcmtyd DFT_energy=-2.9478403 DFT_stress_FOO="0.0001958755270335299 7.528508307640386e-07 7.528508307640386e-07 0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       3.09097691       0.00000000      -0.00000002       0.00400000
+H       16.80625000      15.00000000      15.00000000      -3.09097691      -0.00000000       0.00000002       0.00400000
+2
+Lattice="31.8525 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_6rvac0o8 DFT_energy=-2.80817393 DFT_stress_FOO="0.00019129807289720754 7.42564823724583e-07 7.42564823724583e-07 0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.94808679       0.00000005      -0.00000007       0.00400000
+H       16.85250000      15.00000000      15.00000000      -2.94808679      -0.00000005       0.00000007       0.00400000
+2
+Lattice="31.89875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_4tlahl41 DFT_energy=-2.67501886 DFT_stress_FOO="0.0001866415450817693 7.452986047217199e-07 7.452986047217199e-07 0.0 -0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.81061133      -0.00000012       0.00000008       0.00400000
+H       16.89875000      15.00000000      15.00000000      -2.81061133       0.00000012      -0.00000008       0.00400000
+2
+Lattice="31.945 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_a4hdw3iz DFT_energy=-2.54814801 DFT_stress_FOO="0.00018190578754948716 7.413040388811546e-07 7.413040388811546e-07 -0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.67864008       0.00000001       0.00000001       0.00400000
+H       16.94500000      15.00000000      15.00000000      -2.67864008      -0.00000001      -0.00000001       0.00400000
+2
+Lattice="31.99125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_k5yc9e67 DFT_energy=-2.42718319 DFT_stress_FOO="0.00017722469315412944 7.383393220463601e-07 7.383393220463601e-07 0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.55337602       0.00000000      -0.00000002       0.00400000
+H       16.99125000      15.00000000      15.00000000      -2.55337602      -0.00000000       0.00000002       0.00400000
+2
+Lattice="32.0375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_yq18znmz DFT_energy=-2.31181632 DFT_stress_FOO="0.00017263275871663502 7.428893821991289e-07 7.428893821991289e-07 -0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.43423301       0.00000003      -0.00000003       0.00400000
+H       17.03750000      15.00000000      15.00000000      -2.43423301      -0.00000003       0.00000003       0.00400000
+2
+Lattice="32.08375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_2b3iu8q_ DFT_energy=-2.20184941 DFT_stress_FOO="0.00016816803247663518 7.37328197567967e-07 7.37328197567967e-07 0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.32195396      -0.00000007      -0.00000000       0.00400000
+H       17.08375000      15.00000000      15.00000000      -2.32195396       0.00000007       0.00000000       0.00400000
+2
+Lattice="32.13 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_as2_gbfi DFT_energy=-2.09699906 DFT_stress_FOO="0.0001638312634152251 7.283216998993175e-07 7.283216998993175e-07 -0.0 -0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.21498325      -0.00000000       0.00000001       0.00400000
+H       17.13000000      15.00000000      15.00000000      -2.21498325       0.00000000      -0.00000001       0.00400000
+2
+Lattice="32.17625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_71jbcawq DFT_energy=-1.9969215 DFT_stress_FOO="0.0001595213515675837 7.237529152191708e-07 7.237529152191708e-07 -0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.11311378      -0.00000003      -0.00000003       0.00400000
+H       17.17625000      15.00000000      15.00000000      -2.11311378       0.00000003       0.00000003       0.00400000
+2
+Lattice="32.2225 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_naircx68 DFT_energy=-1.90146511 DFT_stress_FOO="0.00015521987199877135 7.215683870251118e-07 7.215683870251118e-07 -0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       2.01572594      -0.00000001      -0.00000002       0.00400000
+H       17.22250000      15.00000000      15.00000000      -2.01572594       0.00000001       0.00000002       0.00400000
+2
+Lattice="32.26875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_mcjxnwv2 DFT_energy=-1.81042832 DFT_stress_FOO="0.00015088632979757933 7.256066434295582e-07 7.256066434295582e-07 -0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       1.92163319      -0.00000001       0.00000002       0.00400000
+H       17.26875000      15.00000000      15.00000000      -1.92163319       0.00000001      -0.00000002       0.00400000
+2
+Lattice="32.315 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ktotcsfb DFT_energy=-1.7236778 DFT_stress_FOO="0.00014646907023448187 7.303938809291107e-07 7.303938809291107e-07 -0.0 -0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       1.82993317      -0.00000001       0.00000002       0.00400000
+H       17.31500000      15.00000000      15.00000000      -1.82993317       0.00000001      -0.00000002       0.00400000
+2
+Lattice="32.36125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_hs2o68ui DFT_energy=-1.6411092 DFT_stress_FOO="0.0001419640612945836 7.328780015612122e-07 7.328780015612122e-07 -0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       1.74131063      -0.00000001       0.00000003       0.00400000
+H       17.36125000      15.00000000      15.00000000      -1.74131063       0.00000001      -0.00000003       0.00400000
+2
+Lattice="32.4075 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_jpld9kp0 DFT_energy=-1.56257737 DFT_stress_FOO="0.00013736222158210637 7.305249526207543e-07 7.305249526207543e-07 -0.0 -0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       1.65495947       0.00000002      -0.00000002       0.00400000
+H       17.40750000      15.00000000      15.00000000      -1.65495947      -0.00000002       0.00000002       0.00400000
+2
+Lattice="32.45375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_1i9xd5cv DFT_energy=-1.48797551 DFT_stress_FOO="0.00013274128285170394 7.265553528166924e-07 7.265553528166924e-07 -0.0 0.0 0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       1.57166359       0.00000001       0.00000002       0.00400000
+H       17.45375000      15.00000000      15.00000000      -1.57166359      -0.00000001      -0.00000002       0.00400000
+2
+Lattice="32.5 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_kf1eo8os DFT_energy=-1.41716699 DFT_stress_FOO="0.00012808087905909858 7.273480244756796e-07 7.273480244756796e-07 0.0 0.0 -0.0" pbc="T T T"
+H       15.00000000      15.00000000      15.00000000       1.49088564       0.00000000       0.00000002       0.00400000
+H       17.50000000      15.00000000      15.00000000      -1.49088564      -0.00000000      -0.00000002       0.00400000
+2
+Lattice="30.65 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_wi041_np DFT_energy=-0.27443152 DFT_stress_FOO="-0.0015061488469324193 3.4700606211716858e-06 3.4707846362302884e-06 1.7476225552473124e-10 -0.0 0.0" pbc="T T T"
+H       14.71352531      15.00000000      15.00000000     -64.11190342      -0.00000017      -0.00000086       0.00400000
+O       15.36352531      15.00000000      15.00000000      64.11190342       0.00000017       0.00000086       0.00800000
+2
+Lattice="30.69625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_5gy_xvqw DFT_energy=-2.75835216 DFT_stress_FOO="-0.0011164604368692085 2.6894662823430963e-06 2.689098033304669e-06 9.487093871342554e-10 6.241509125883259e-12 -6.241509125883259e-12" pbc="T T T"
+H       14.69314154      15.00000000      15.00000000     -44.41906603       0.00000027      -0.00000122       0.00400000
+O       15.38939154      15.00000000      15.00000000      44.41906603      -0.00000027       0.00000122       0.00800000
+2
+Lattice="30.7425 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_02rmuia4 DFT_energy=-4.46444984 DFT_stress_FOO="-0.0008070967165619498 2.9822991660021607e-06 2.9805577849560394e-06 7.364980768542244e-10 0.0 0.0" pbc="T T T"
+H       14.67275776      15.00000000      15.00000000     -30.17561120      -0.00000000      -0.00000015       0.00400000
+O       15.41525776      15.00000000      15.00000000      30.17561120       0.00000000       0.00000015       0.00800000
+2
+Lattice="30.78875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_i01r9cq5 DFT_energy=-5.60870633 DFT_stress_FOO="-0.0005627584364261871 2.663464155324666e-06 2.6638823364361007e-06 -2.6214338328709685e-10 0.0 -0.0" pbc="T T T"
+H       14.65237399      15.00000000      15.00000000     -19.88955169       0.00000000       0.00000028       0.00400000
+O       15.44112399      15.00000000      15.00000000      19.88955169      -0.00000000      -0.00000028       0.00800000
+2
+Lattice="31.2975 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_qbyvi0ia DFT_energy=-5.98357539 DFT_stress_FOO="0.00024778635816179303 2.2131892039651963e-06 2.2131892039651963e-06 7.552226042318743e-10 0.0 -0.0" pbc="T T T"
+H       14.42815245      15.00000000      15.00000000       5.32373179       0.00000002       0.00000045       0.00400000
+O       15.72565245      15.00000000      15.00000000      -5.32373179      -0.00000002      -0.00000045       0.00800000
+2
+Lattice="31.34375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_nr6v1gnl DFT_energy=-5.73500383 DFT_stress_FOO="0.0002590712313557185 3.0280743939313886e-06 3.028280363732543e-06 -1.1234716426589865e-10 0.0 -0.0" pbc="T T T"
+H       14.40776868      15.00000000      15.00000000       5.38583306      -0.00000000       0.00000035       0.00400000
+O       15.75151868      15.00000000      15.00000000      -5.38583306       0.00000000      -0.00000035       0.00800000
+2
+Lattice="31.39 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_pdk2mm6d DFT_energy=-5.48541561 DFT_stress_FOO="0.0002666724157956206 2.9663333856581515e-06 2.9659027215284654e-06 -1.4355470989531495e-10 -0.0 0.0" pbc="T T T"
+H       14.38738490      15.00000000      15.00000000       5.36501596      -0.00000000       0.00000019       0.00400000
+O       15.77738490      15.00000000      15.00000000      -5.36501596       0.00000000      -0.00000019       0.00800000
+2
+Lattice="31.43625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_34m322dy DFT_energy=-5.23784464 DFT_stress_FOO="0.00027132755175452377 2.9132368675242625e-06 2.913449078834543e-06 1.68520746398848e-10 -0.0 0.0" pbc="T T T"
+H       14.36700112      15.00000000      15.00000000       5.28789687       0.00000000       0.00000006       0.00400000
+O       15.80325112      15.00000000      15.00000000      -5.28789687      -0.00000000      -0.00000006       0.00800000
+2
+Lattice="31.4825 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_wdn1bgng DFT_energy=-4.99448823 DFT_stress_FOO="0.00027536074629506914 4.053604275387015e-06 4.05356682633226e-06 -3.37041492797696e-10 0.0 -0.0" pbc="T T T"
+H       14.34661735      15.00000000      15.00000000       5.20579055      -0.00000000      -0.00000002       0.00400000
+O       15.82911735      15.00000000      15.00000000      -5.20579055       0.00000000       0.00000002       0.00800000
+2
+Lattice="31.52875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_bhq4g373 DFT_energy=-4.75678809 DFT_stress_FOO="0.0002740821856336502 2.769757055738458e-06 2.7686835161688067e-06 1.373132007694317e-10 0.0 0.0" pbc="T T T"
+H       14.32623357      15.00000000      15.00000000       5.08676321       0.00000000      -0.00000010       0.00400000
+O       15.85498357      15.00000000      15.00000000      -5.08676321      -0.00000000       0.00000010       0.00800000
+2
+Lattice="31.575 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_c5hd47xr DFT_energy=-4.52620524 DFT_stress_FOO="0.00027265060189299203 2.7263536012770657e-06 2.7240504844096152e-06 -4.3690563881182806e-10 -0.0 0.0" pbc="T T T"
+H       14.30584980      15.00000000      15.00000000       4.91641231      -0.00000001      -0.00000022       0.00400000
+O       15.88084980      15.00000000      15.00000000      -4.91641231       0.00000001       0.00000022       0.00800000
+2
+Lattice="31.62125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_3ti93mdi DFT_energy=-4.3035619 DFT_stress_FOO="0.0002699173701486582 2.67031109083576e-06 2.6704858530912847e-06 1.2483018251766518e-11 0.0 -0.0" pbc="T T T"
+H       14.28546602      15.00000000      15.00000000       4.73265292      -0.00000000      -0.00000035       0.00400000
+O       15.90671602      15.00000000      15.00000000      -4.73265292       0.00000000       0.00000035       0.00800000
+2
+Lattice="31.6675 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_lz10ht5s DFT_energy=-4.08932682 DFT_stress_FOO="0.0002673112030471092 2.634241409597281e-06 2.632581168169796e-06 2.6214338328709685e-10 -0.0 -0.0" pbc="T T T"
+H       14.26508225      15.00000000      15.00000000       4.55655610      -0.00000000      -0.00000045       0.00400000
+O       15.93258225      15.00000000      15.00000000      -4.55655610       0.00000000       0.00000045       0.00800000
+2
+Lattice="31.71375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_vx7p17s8 DFT_energy=-3.88374701 DFT_stress_FOO="0.00026239482248223303 1.6316865232340307e-06 1.631518002487632e-06 2.4966036503533035e-10 -0.0 -0.0" pbc="T T T"
+H       14.24469847      15.00000000      15.00000000       4.36392771       0.00000000      -0.00000049       0.00400000
+O       15.95844847      15.00000000      15.00000000      -4.36392771      -0.00000000       0.00000049       0.00800000
+2
+Lattice="31.76 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_kegwglj9 DFT_energy=-3.68716505 DFT_stress_FOO="0.00025688566707114446 1.5779346466419242e-06 1.5779096806054207e-06 3.37041492797696e-10 0.0 0.0" pbc="T T T"
+H       14.22431469      15.00000000      15.00000000       4.16153068      -0.00000000      -0.00000049       0.00400000
+O       15.98431469      15.00000000      15.00000000      -4.16153068       0.00000000       0.00000049       0.00800000
+2
+Lattice="31.80625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_yf3n8zik DFT_energy=-3.49967644 DFT_stress_FOO="0.0002507529349663071 1.5408288748885482e-06 1.5413968522190035e-06 2.1221131028003078e-10 0.0 0.0" pbc="T T T"
+H       14.20393092      15.00000000      15.00000000       3.95920510       0.00000000      -0.00000057       0.00400000
+O       16.01018092      15.00000000      15.00000000      -3.95920510      -0.00000000       0.00000057       0.00800000
+2
+Lattice="31.89875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_g6mgvrvx DFT_energy=-3.15145627 DFT_stress_FOO="0.00023909647352657215 1.9710186498809258e-06 1.971324483828094e-06 2.746264015388634e-10 0.0 -0.0" pbc="T T T"
+H       14.16316337      15.00000000      15.00000000       3.59774019       0.00000001      -0.00000065       0.00400000
+O       16.06191337      15.00000000      15.00000000      -3.59774019      -0.00000001       0.00000065       0.00800000
+2
+Lattice="31.945 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_b5z7hbez DFT_energy=-2.9903533 DFT_stress_FOO="0.00023192514182016955 1.9448480021160976e-06 1.9449478662621114e-06 -1.6227923727296472e-10 -0.0 -0.0" pbc="T T T"
+H       14.14277959      15.00000000      15.00000000       3.40694163       0.00000000      -0.00000053       0.00400000
+O       16.08777959      15.00000000      15.00000000      -3.40694163      -0.00000000       0.00000053       0.00800000
+2
+Lattice="31.99125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_pjpeh3zs DFT_energy=-2.83757663 DFT_stress_FOO="0.00022472292712661212 1.900071415647011e-06 1.8997905477363462e-06 6.865660038471585e-11 0.0 -0.0" pbc="T T T"
+H       14.12239581      15.00000000      15.00000000       3.22479367      -0.00000000      -0.00000047       0.00400000
+O       16.11364581      15.00000000      15.00000000      -3.22479367       0.00000000       0.00000047       0.00800000
+2
+Lattice="32.0375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_42h69daz DFT_energy=-2.6926861 DFT_stress_FOO="0.00021700346608877444 1.2560849870566282e-06 1.25609747007488e-06 5.118037483224271e-10 -0.0 -0.0" pbc="T T T"
+H       14.10201204      15.00000000      15.00000000       3.06857004       0.00000000      -0.00000051       0.00400000
+O       16.13951204      15.00000000      15.00000000      -3.06857004      -0.00000000       0.00000051       0.00800000
+2
+Lattice="32.08375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_g9xmrm1i DFT_energy=-2.55525156 DFT_stress_FOO="0.00021015639950598886 1.2184674115549297e-06 1.2178058115875861e-06 -4.993207300706607e-11 0.0 -0.0" pbc="T T T"
+H       14.08162826      15.00000000      15.00000000       2.90596228       0.00000000      -0.00000048       0.00400000
+O       16.16537826      15.00000000      15.00000000      -2.90596228      -0.00000000       0.00000048       0.00800000
+2
+Lattice="32.13 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_wv30zrdo DFT_energy=-2.4248243 DFT_stress_FOO="0.00020411841975119153 1.277362291666764e-06 1.2765384124621475e-06 2.0596980115414753e-10 0.0 0.0" pbc="T T T"
+H       14.06124449      15.00000000      15.00000000       2.76384141      -0.00000001      -0.00000033       0.00400000
+O       16.19124449      15.00000000      15.00000000      -2.76384141       0.00000001       0.00000033       0.00800000
+2
+Lattice="32.17625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_9owmehfz DFT_energy=-2.30103168 DFT_stress_FOO="0.00019763904671252084 1.2655533564005928e-06 1.2654160431998234e-06 -0.0 -0.0 -0.0" pbc="T T T"
+H       14.04086071      15.00000000      15.00000000       2.61841048       0.00000000      -0.00000014       0.00400000
+O       16.21711071      15.00000000      15.00000000      -2.61841048      -0.00000000       0.00000014       0.00800000
+2
+Lattice="32.2225 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_k5lhj7vg DFT_energy=-2.18348332 DFT_stress_FOO="0.00019206418693486406 1.7036636064737167e-06 1.7031205951797649e-06 -1.8724527377649774e-11 0.0 -0.0" pbc="T T T"
+H       14.02047694      15.00000000      15.00000000       2.49816119      -0.00000001      -0.00000008       0.00400000
+O       16.24297694      15.00000000      15.00000000      -2.49816119       0.00000001       0.00000008       0.00800000
+2
+Lattice="32.26875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_hdl083b0 DFT_energy=-2.07188136 DFT_stress_FOO="0.00018568521481199235 1.6386770134550202e-06 1.6384273530899846e-06 8.738112776236562e-11 0.0 -0.0" pbc="T T T"
+H       14.00009316      15.00000000      15.00000000       2.36469805      -0.00000000      -0.00000007       0.00400000
+O       16.26884316      15.00000000      15.00000000      -2.36469805       0.00000000       0.00000007       0.00800000
+2
+Lattice="32.315 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_xjb6tqct DFT_energy=-1.96607808 DFT_stress_FOO="0.00017916131484721763 1.4755676554683129e-06 1.4756612781052011e-06 3.120754562941629e-10 -0.0 0.0" pbc="T T T"
+H       13.97970938      15.00000000      15.00000000       2.23467983      -0.00000000       0.00000004       0.00400000
+O       16.29470938      15.00000000      15.00000000      -2.23467983       0.00000000      -0.00000004       0.00800000
+2
+Lattice="32.36125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_x812ll6q DFT_energy=-1.86588753 DFT_stress_FOO="0.00017334251192688483 1.555446489261367e-06 1.5558272213180456e-06 1.9972829202826428e-10 0.0 -0.0" pbc="T T T"
+H       13.95932561      15.00000000      15.00000000       2.12076331       0.00000000       0.00000026       0.00400000
+O       16.32057561      15.00000000      15.00000000      -2.12076331      -0.00000000      -0.00000026       0.00800000
+2
+Lattice="32.4075 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_gz740dod DFT_energy=-1.77110615 DFT_stress_FOO="0.00016653641461000153 7.569515022597439e-07 7.570451248966321e-07 1.1234716426589865e-10 -0.0 -0.0" pbc="T T T"
+H       13.93894183      15.00000000      15.00000000       2.01052666      -0.00000000       0.00000039       0.00400000
+O       16.34644183      15.00000000      15.00000000      -2.01052666       0.00000000      -0.00000039       0.00800000
+2
+Lattice="32.45375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_by785f7e DFT_energy=-1.6815682 DFT_stress_FOO="0.00015879846622213304 2.063879822655817e-07 2.065003294298476e-07 -1.8724527377649774e-11 0.0 0.0" pbc="T T T"
+H       13.91855806      15.00000000      15.00000000       1.91232355      -0.00000000       0.00000041       0.00400000
+O       16.37230806      15.00000000      15.00000000      -1.91232355       0.00000000      -0.00000041       0.00800000
+2
+Lattice="32.5 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ad6lj68r DFT_energy=-1.59715542 DFT_stress_FOO="0.00015227007861229677 2.8220983512681155e-07 2.8210997098079737e-07 4.993207300706607e-11 0.0 0.0" pbc="T T T"
+H       13.89817428      15.00000000      15.00000000       1.79769576      -0.00000000       0.00000042       0.00400000
+O       16.39817428      15.00000000      15.00000000      -1.79769576       0.00000000      -0.00000042       0.00800000
+2
+Lattice="30.65 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_n9fe4wb2 DFT_energy=62.35857981 DFT_stress_FOO="-0.011715523292698893 1.2857071893680702e-05 1.2861004044430007e-05 -3.2455847454592943e-10 6.241509125883259e-12 -6.241509125883259e-12" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000    -497.74914410       0.00000035       0.00000360       0.00800000
+O       15.65000000      15.00000000      15.00000000     497.74914410      -0.00000035      -0.00000360       0.00800000
+2
+Lattice="30.69625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ahjjdl6f DFT_energy=42.50870924 DFT_stress_FOO="-0.009239854519040552 1.1216241559577251e-05 1.1216335182214138e-05 -3.682490384271122e-10 6.241509125883259e-12 6.241509125883259e-12" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000    -367.13031315      -0.00000006       0.00000798       0.00800000
+O       15.69625000      15.00000000      15.00000000     367.13031315       0.00000006      -0.00000798       0.00800000
+2
+Lattice="30.7425 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_jdwkg487 DFT_energy=27.87395117 DFT_stress_FOO="-0.007248227429633456 7.164122763362195e-06 7.165065231240204e-06 3.682490384271122e-10 -6.241509125883259e-12 6.241509125883259e-12" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000    -270.39509678       0.00000022      -0.00000357       0.00800000
+O       15.74250000      15.00000000      15.00000000     270.39509678      -0.00000022       0.00000357       0.00800000
+2
+Lattice="30.78875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_rbxampun DFT_energy=17.12384118 DFT_stress_FOO="-0.005625266617297029 6.7940948948342065e-06 6.794637906128159e-06 2.3717734678356385e-10 1.2483018251766518e-11 6.241509125883259e-12" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000    -198.05500719       0.00000018      -0.00000712       0.00800000
+O       15.78875000      15.00000000      15.00000000     198.05500719      -0.00000018       0.00000712       0.00800000
+2
+Lattice="30.835 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_p5m1mqjh DFT_energy=9.26319422 DFT_stress_FOO="-0.004329789593694214 9.227047635121753e-06 9.228202314310042e-06 -6.241509125883259e-12 1.8724527377649774e-11 3.744905475529955e-11" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000    -144.38760264      -0.00000049       0.00000278       0.00800000
+O       15.83500000      15.00000000      15.00000000     144.38760264       0.00000049      -0.00000278       0.00800000
+2
+Lattice="30.88125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ac_c75h5 DFT_energy=3.55260542 DFT_stress_FOO="-0.003302664114121119 7.810849214458841e-06 7.81550538026675e-06 3.1207545629416294e-11 -6.241509125883259e-12 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000    -104.52095992      -0.00000001      -0.00000298       0.00800000
+O       15.88125000      15.00000000      15.00000000     104.52095992       0.00000001       0.00000298       0.00800000
+2
+Lattice="30.9275 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_yhsw4rfn DFT_energy=-0.56012182 DFT_stress_FOO="-0.0024821757653748933 3.7684172404071574e-06 3.768567036626178e-06 -6.366339308400923e-10 0.0 -0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000     -74.77305871       0.00000001      -0.00000238       0.00800000
+O       15.92750000      15.00000000      15.00000000      74.77305871      -0.00000001       0.00000238       0.00800000
+2
+Lattice="30.97375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_d9l3r__b DFT_energy=-3.47848185 DFT_stress_FOO="-0.0018279643529797785 3.873199695612485e-06 3.873031174866086e-06 3.120754562941629e-10 6.241509125883259e-12 -6.241509125883259e-12" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000     -52.55169301       0.00000012       0.00000290       0.00800000
+O       15.97375000      15.00000000      15.00000000      52.55169301      -0.00000012      -0.00000290       0.00800000
+2
+Lattice="31.02 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ujev74i7 DFT_energy=-5.50669831 DFT_stress_FOO="-0.00130440286849054 4.516480833671643e-06 4.5173484034401415e-06 5.055622391965439e-10 6.241509125883259e-12 -0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000     -35.98616877       0.00000001       0.00000158       0.00800000
+O       16.02000000      15.00000000      15.00000000      35.98616877      -0.00000001      -0.00000158       0.00800000
+2
+Lattice="31.6675 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_6dqsgvi0 DFT_energy=-5.91165944 DFT_stress_FOO="0.0004505887994043559 2.815045445955867e-07 2.8059328426320776e-07 -7.052905312248082e-10 -1.2483018251766518e-11 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       7.75371625       0.00000002      -0.00000029       0.00800000
+O       16.66750000      15.00000000      15.00000000      -7.75371625      -0.00000002       0.00000029       0.00800000
+2
+Lattice="31.71375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_9u20jmku DFT_energy=-5.55747257 DFT_stress_FOO="0.00045195882314050554 1.336968703818949e-06 1.3371497075835999e-06 4.4314714793771133e-10 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       7.58488288      -0.00000003       0.00000171       0.00800000
+O       16.71375000      15.00000000      15.00000000      -7.58488288       0.00000003      -0.00000171       0.00800000
+2
+Lattice="31.76 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_aao83y7e DFT_energy=-5.21424262 DFT_stress_FOO="0.00044854344438078573 1.6075942980081215e-06 1.608468109285745e-06 -6.241509125883259e-11 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       7.25616356      -0.00000001       0.00000027       0.00800000
+O       16.76000000      15.00000000      15.00000000      -7.25616356       0.00000001      -0.00000027       0.00800000
+2
+Lattice="31.80625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_6sfgkdrl DFT_energy=-4.88709155 DFT_stress_FOO="0.00044043332104524996 1.0408028542866629e-06 1.0409339259783063e-06 -2.746264015388634e-10 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       6.89378153       0.00000001      -0.00000181       0.00800000
+O       16.80625000      15.00000000      15.00000000      -6.89378153      -0.00000001       0.00000181       0.00800000
+2
+Lattice="31.8525 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_u9rtl7s2 DFT_energy=-4.57491719 DFT_stress_FOO="0.0004313445602863212 1.8488598332691387e-07 1.8481732672652914e-07 3.1207545629416294e-11 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       6.59572496      -0.00000000      -0.00000044       0.00800000
+O       16.85250000      15.00000000      15.00000000      -6.59572496       0.00000000       0.00000044       0.00800000
+2
+Lattice="31.89875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_21xc_0nd DFT_energy=-4.27536869 DFT_stress_FOO="0.0004241730038855901 3.5507071605872232e-06 3.550345153057922e-06 2.3093583765768055e-10 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       6.30939958       0.00000003       0.00000168       0.00800000
+O       16.89875000      15.00000000      15.00000000      -6.30939958      -0.00000003      -0.00000168       0.00800000
+2
+Lattice="31.945 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_n4didwt2 DFT_energy=-3.99009832 DFT_stress_FOO="0.00041075231123482395 6.484472351626516e-06 6.484341279934872e-06 -8.113961863648236e-11 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       6.01389109       0.00000001       0.00000047       0.00800000
+O       16.94500000      15.00000000      15.00000000      -6.01389109      -0.00000001      -0.00000047       0.00800000
+2
+Lattice="31.99125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_3lsz2ola DFT_energy=-3.71896456 DFT_stress_FOO="0.00039470044175544125 2.2139693926059316e-06 2.2140255661880647e-06 1.373132007694317e-10 -0.0 -0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       5.70868688       0.00000001      -0.00000175       0.00800000
+O       16.99125000      15.00000000      15.00000000      -5.70868688      -0.00000001       0.00000175       0.00800000
+2
+Lattice="32.0375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_msahvhma DFT_energy=-3.46160493 DFT_stress_FOO="0.00038299080889946286 2.2681893823824794e-06 2.2681456918185982e-06 -4.306641296859448e-10 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       5.38754697      -0.00000000      -0.00000066       0.00800000
+O       17.03750000      15.00000000      15.00000000      -5.38754697       0.00000000       0.00000066       0.00800000
+2
+Lattice="32.08375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_2y16sdgy DFT_energy=-3.21827434 DFT_stress_FOO="0.0003665377227304502 8.655163119953573e-07 8.655974516139938e-07 1.68520746398848e-10 -0.0 -0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       5.10245232       0.00000000       0.00000164       0.00800000
+O       17.08375000      15.00000000      15.00000000      -5.10245232      -0.00000000      -0.00000164       0.00800000
+2
+Lattice="32.13 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_aykjd9fw DFT_energy=-2.99029316 DFT_stress_FOO="0.00034879786831551804 8.712772249185476e-07 8.712397758637922e-07 7.48981095105991e-11 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       4.75262290      -0.00000001       0.00000072       0.00800000
+O       17.13000000      15.00000000      15.00000000      -4.75262290       0.00000001      -0.00000072       0.00800000
+2
+Lattice="32.17625 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ham23voq DFT_energy=-2.77973958 DFT_stress_FOO="0.00033257576167472686 7.68978890345321e-07 7.687479545076633e-07 -3.432830019235792e-10 -6.241509125883259e-12 -6.241509125883259e-12" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       4.35607593       0.00000004      -0.00000166       0.00800000
+O       17.17625000      15.00000000      15.00000000      -4.35607593      -0.00000004       0.00000166       0.00800000
+2
+Lattice="32.2225 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_wtx6zxyp DFT_energy=-2.5843232 DFT_stress_FOO="0.00031990199666256426 7.494055177265511e-07 7.4957403847295e-07 -8.113961863648236e-11 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       4.05520939       0.00000000      -0.00000101       0.00800000
+O       17.22250000      15.00000000      15.00000000      -4.05520939      -0.00000000       0.00000101       0.00800000
+2
+Lattice="32.26875 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_xxklu9gq DFT_energy=-2.40121926 DFT_stress_FOO="0.00030475023393875255 2.9832915659531764e-06 2.9832603584075472e-06 -5.6173582132949326e-11 0.0 -0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       3.82157370       0.00000000       0.00000152       0.00800000
+O       17.26875000      15.00000000      15.00000000      -3.82157370      -0.00000000      -0.00000152       0.00800000
+2
+Lattice="32.315 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_bqrds0xd DFT_energy=-2.23026989 DFT_stress_FOO="0.00028962344349295354 5.770712092517884e-06 5.7706621604448766e-06 -1.810037646506145e-10 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       3.63494419       0.00000001       0.00000118       0.00800000
+O       17.31500000      15.00000000      15.00000000      -3.63494419      -0.00000001      -0.00000118       0.00800000
+2
+Lattice="32.36125 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_lnoiqchb DFT_energy=-2.06958256 DFT_stress_FOO="0.00027547515315734663 6.188606094532272e-06 6.188337709639859e-06 2.246943285317973e-10 0.0 -0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       3.36319785      -0.00000000      -0.00000145       0.00800000
+O       17.36125000      15.00000000      15.00000000      -3.36319785       0.00000000       0.00000145       0.00800000
+2
+Lattice="32.4075 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_r6_6hiaf DFT_energy=-1.91853129 DFT_stress_FOO="0.00026036116404676475 2.6775075508579036e-06 2.6775637244400367e-06 1.8724527377649774e-11 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       3.14299276      -0.00000000      -0.00000145       0.00800000
+O       17.40750000      15.00000000      15.00000000      -3.14299276       0.00000000       0.00000145       0.00800000
+2
+Lattice="32.45375 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP_ei3boiya DFT_energy=-1.77752326 DFT_stress_FOO="0.00024571348432448676 2.7506954868680104e-07 2.7520686188757055e-07 1.2483018251766518e-11 0.0 0.0" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       2.97453299      -0.00000000       0.00000123       0.00800000
+O       17.45375000      15.00000000      15.00000000      -2.97453299       0.00000000      -0.00000123       0.00800000
+2
+Lattice="32.5 0.0 0.0 0.0 30.0 0.0 0.0 0.0 30.0" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 config_type=dimer vasp_rundir=vasp/run_VASP__nct1r_g DFT_energy=-1.64614904 DFT_stress_FOO="0.0002310890417406845 3.695722383617995e-07 3.696783440169395e-07 8.113961863648236e-11 0.0 6.241509125883259e-12" pbc="T T T"
+O       15.00000000      15.00000000      15.00000000       2.70432311       0.00000001       0.00000167       0.00800000
+O       17.50000000      15.00000000      15.00000000      -2.70432311      -0.00000001      -0.00000167       0.00800000
+72
+Lattice="6.427874638174196 0.0 0.0 0.0 9.61761207018 0.0 0.0 0.0 32.85574927634839" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 density=4.399253 time=0.256 temp=567.26908 md_energy=-849.58278 vasp_rundir=DFT_calcs/run_VASP_v151pybi DFT_energy=-101.40194091 DFT_stress_FOO="-0.21686350783630162 -0.4962320184543789 -0.33844828585704956 -3.948235118323854e-06 0.0009038344906549269 2.4683046479765483e-06" config_type=slab_MD_sample pbc="T T T"
+O        3.21630000       2.67948000      12.97850000       0.45306938     -38.45314595       3.48721900       0.00800000
+Ir       3.21378000       9.61761000      11.33320000       0.03127154       0.00065650      -6.14449348       0.01600000
+Ir       6.42622000       1.60121000      11.61880000      -0.04989545      -8.43068796     -16.25744193       0.01600000
+O        0.57938500      -0.00000211      12.20020000      23.35808650       0.00016602      -4.71739074       0.00800000
+O        5.83606000      -0.00000120      12.22050000     -23.16170878       0.00021570      -4.74818083       0.00800000
+O        3.21133000       3.74226000      13.28220000       2.61904959     -76.84581803      58.80734346       0.00800000
+O        6.42297000       1.45918000      13.31520000       0.11499710       9.31637193      -9.72337978       0.00800000
+Ir       0.00050302       0.00000033      14.19310000       0.14638953       0.00084484      15.10888290       0.01600000
+Ir       3.21451000       1.55417000      14.43220000       0.02360683      -0.11224749       7.22728944       0.01600000
+O        3.82077000       9.61749000      13.16920000      15.80371090       0.00090041      -0.41637705       0.00800000
+O        2.63283000       9.61746000      13.18500000     -15.97044307       0.00009993       0.12374569       0.00800000
+O        6.42275000       1.61354000      14.54040000      -0.09845152       1.42365919      27.76608661       0.00800000
+O        3.21358000       1.55126000      16.31280000      -0.01924414      -0.10930595       2.02188030       0.00800000
+Ir       3.21388000       0.00000008      17.75730000      -0.02029972       0.00033276      -3.81577874       0.01600000
+Ir       6.42785000       1.60281000      17.79610000      -0.00831217      -0.12653501      -0.91130801       0.01600000
+O        1.17450000       9.61761000      17.55980000       1.29573993       0.00010461       0.63071878       0.00800000
+O        5.25292000       9.61761000      17.56060000      -1.28591640       0.00009948       0.63250213       0.00800000
+O        3.21363000       1.59797000      18.87390000      -0.00956978      -0.13579873       1.75758846       0.00800000
+O        0.00014809       1.59998000      19.73010000      -0.00214746       0.00616813       0.91674021       0.00800000
+Ir       0.00000215       0.00000001      21.01710000       0.00074058       0.00005756      -1.18874768       0.01600000
+Ir       3.21393000       1.60250000      20.85070000       0.00135102       0.02598406      -0.27705189       0.01600000
+O        4.42641000       0.00000005      20.94780000       0.51079646       0.00007521       0.26889350       0.00800000
+O        2.00145000       0.00000004      20.94770000      -0.51053297       0.00007601       0.26016645       0.00800000
+O        0.00000813       1.60283000      22.18220000      -0.00787681       0.00469517       0.36265091       0.00800000
+O        3.18868000       4.80878000      11.97670000      -2.28153557      -0.00707913    -111.63724984       0.00800000
+Ir       3.21834000       3.16738000      11.37330000       0.48772597     -27.51649541     -41.27563219       0.01600000
+Ir       6.42757000       4.80881000      11.71830000      -0.25571047      -0.00097714     -11.51108913       0.01600000
+O        0.59650500       3.21739000      11.53920000      22.20409650      -1.15225052      -3.55650784       0.00800000
+O        5.82178000       3.21590000      11.54410000     -22.36748037      -0.93705862      -3.12978818       0.00800000
+O        3.16317000       4.80880000      13.13190000     -16.22483373       0.01649356     106.51834837       0.00800000
+O        0.03741520       4.80880000      13.48620000       1.76229147      -0.00200708     -20.18917052       0.00800000
+Ir       0.00084604       3.20925000      14.13290000       0.04865087      -4.79530967       1.01162494       0.01600000
+Ir       3.21968000       4.80881000      14.67280000      -0.09307093       0.00079144      44.61533068       0.01600000
+O        3.92868000       4.23515000      12.60820000     108.10708113     -70.37990298     -23.09809259       0.00800000
+O        2.46412000       4.20378000      12.58800000    -102.35306205     -72.15790299     -24.05452535       0.00800000
+O        6.40408000       4.80881000      14.64780000      -1.56455556       0.00214163      33.65243419       0.00800000
+O        3.21159000       4.80881000      16.49210000       0.18960992       0.00005133       3.00226274       0.00800000
+Ir       3.21382000       3.20548000      17.76010000      -0.00626097      -0.53689225      -2.74751344       0.01600000
+Ir       6.42785000       4.80881000      17.78110000      -0.00162348      -0.00010326      -0.73965299       0.01600000
+O        1.21516000       3.18849000      17.57390000       0.20204399       0.39341537       0.60884192       0.00800000
+O        5.21157000       3.18791000      17.57580000      -0.19619205       0.40731945       0.58634494       0.00800000
+O        3.21375000       4.80881000      18.89410000      -0.00784071       0.00001998       1.48946945       0.00800000
+O        0.00010185       4.80881000      19.72120000      -0.00685691       0.00003341       0.86346086       0.00800000
+Ir       6.42787000       3.20532000      21.01560000       0.00224908       0.04476354      -1.25591328       0.01600000
+Ir       3.21393000       4.80881000      20.85100000      -0.00410156      -0.00006564      -0.03094109       0.01600000
+O        4.42521000       3.20500000      20.95140000       0.52463567      -0.00065513       0.27485847       0.00800000
+O        2.00262000       3.20501000      20.95110000      -0.52547711      -0.00167920       0.27379801       0.00800000
+O        0.00001273       4.80881000      22.18170000      -0.00100229       0.00004170       0.33166103       0.00800000
+O        3.21630000       6.93830000      12.97840000       0.45252672      38.43097653       3.48852467       0.00800000
+Ir       3.21834000       6.45023000      11.37330000       0.48756848      27.51448489     -41.27953749       0.01600000
+Ir       6.42622000       8.01640000      11.61880000      -0.04970794       8.43199474     -16.25772267       0.01600000
+O        0.59648400       6.40022000      11.53920000      22.20601345       1.15274436      -3.55689101       0.00800000
+O        5.82178000       6.40172000      11.54410000     -22.36424859       0.93097343      -3.12823058       0.00800000
+O        3.21134000       5.87542000      13.28220000       2.61870135      76.85704714      58.80767041       0.00800000
+O        6.42296000       8.15843000      13.31520000       0.11499547      -9.31547504      -9.72412474       0.00800000
+Ir       0.00084710       6.40836000      14.13280000       0.04865010       4.79769711       1.01436006       0.01600000
+Ir       3.21451000       8.06344000      14.43220000       0.02360457       0.11116448       7.23283468       0.01600000
+O        3.92862000       5.38247000      12.60820000     108.10826872      70.37944156     -23.09356161       0.00800000
+O        2.46419000       5.41384000      12.58800000    -102.35580737      72.16174128     -24.05266824       0.00800000
+O        6.42273000       8.00408000      14.54040000      -0.09897848      -1.42701858      27.76615698       0.00800000
+O        3.21358000       8.06635000      16.31290000      -0.01924172       0.10911459       2.01998646       0.00800000
+Ir       3.21382000       6.41214000      17.76010000      -0.00624197       0.53686747      -2.74756690       0.01600000
+Ir       6.42785000       8.01480000      17.79610000      -0.00830863       0.12669699      -0.91130684       0.01600000
+O        1.21516000       6.42912000      17.57390000       0.20202375      -0.39313654       0.60888733       0.00800000
+O        5.21157000       6.42970000      17.57580000      -0.19617968      -0.40704023       0.58638878       0.00800000
+O        3.21363000       8.01964000      18.87390000      -0.00956158       0.13605115       1.75774133       0.00800000
+O        0.00014801       8.01763000      19.73010000      -0.00214505      -0.00599542       0.91673711       0.00800000
+Ir       6.42787000       6.41229000      21.01560000       0.00224104      -0.04448542      -1.25591024       0.01600000
+Ir       3.21393000       8.01511000      20.85070000       0.00135013      -0.02576857      -0.27700983       0.01600000
+O        4.42521000       6.41261000      20.95140000       0.52464242       0.00088747       0.27487490       0.00800000
+O        2.00262000       6.41260000      20.95110000      -0.52548070       0.00190456       0.27381385       0.00800000
+O        0.00000814       8.01478000      22.18220000      -0.00787643      -0.00452872       0.36263674       0.00800000
+72
+Lattice="6.427874638174196 0.0 0.0 0.0 9.61761207018 0.0 0.0 0.0 32.85574927634839" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 density=4.399253 time=0.339 temp=608.08806 md_energy=-1097.4931 vasp_rundir=DFT_calcs/run_VASP_cvt0h6m9 DFT_energy=120.92953744 DFT_stress_FOO="-0.43950377223604536 -0.6512351696338022 -0.4776083087193679 2.5159460871344156e-06 -0.00672529734869041 -2.34249454852612e-06" config_type=slab_MD_sample pbc="T T T"
+O        3.17728000       3.27865000      13.20240000      20.74227622     -68.15021614      19.43377801       0.00800000
+Ir       3.21931000       9.61760000      11.41400000       0.01295769       0.00077612      -9.32929941       0.01600000
+Ir       6.43919000       1.49757000      11.68850000      -2.49185473       1.05936688     -26.68603863       0.01600000
+O        0.66127900       9.61760000      12.58960000      22.69699839       0.00041852     -12.26156127       0.00800000
+O        5.87663000       9.61759000      12.58340000     -22.91803335       0.00137251      -9.95649083       0.00800000
+O        2.20537000       3.78747000      13.19410000     -17.11523322    -104.79029776      69.62066938       0.00800000
+O        0.16026000       1.58689000      13.34340000       7.31599422       2.88438851      -7.06377367       0.00800000
+Ir       0.00510919       9.61761000      14.18430000      -1.31031780       0.00032427      30.41069267       0.01600000
+Ir       3.20772000       1.56210000      14.27670000       0.55086453      -1.06473739       5.78443700       0.01600000
+O        3.90647000       9.61742000      13.12980000       7.98199144      -0.00066993       1.79310879       0.00800000
+O        2.57085000       9.61749000      13.13210000      -7.63141127       0.00502759       1.99879112       0.00800000
+O        6.39437000       1.69020000      14.48710000      -5.75884363       0.86355593      31.29223731       0.00800000
+O        3.19223000       1.61504000      16.24660000      -0.01254278      -0.48908604       1.61263616       0.00800000
+Ir       3.21255000       9.61761000      17.74950000      -0.07149417      -0.00002886      -3.37817937       0.01600000
+Ir       0.00026925       1.63756000      17.81490000      -0.01518312       6.43436832       2.58018659       0.01600000
+O        0.57911100       9.61761000      17.40220000      25.29690220       0.00002595      -3.34732740       0.00800000
+O        5.84806000       0.00000125      17.40930000     -25.34455041      -0.00006929      -3.14507909       0.00800000
+O        3.20916000       1.61453000      18.83070000       0.01283225      -2.42460074       1.65873259       0.00800000
+O        0.00337539       1.62421000      19.74010000      -0.00807241      -0.61329797       1.50452380       0.00800000
+Ir       0.00007729       0.00000011      21.01210000       0.00370341      -0.00001574      -1.57394804       0.01600000
+Ir       3.21369000       1.60570000      20.83720000       0.00671601       0.07719293      -0.63830105       0.01600000
+O        4.44216000       0.00000064      20.82890000       0.18836935      -0.00002182       0.72100320       0.00800000
+O        1.98558000       0.00000048      20.82850000      -0.18874009      -0.00002328       0.74161684       0.00800000
+O        0.00026947       1.60564000      22.16450000       0.00032787      -0.09309707       0.49990812       0.00800000
+O        2.73787000       4.80883000      12.13750000      50.17682986      -0.00330848    -130.16384377       0.00800000
+Ir       3.16749000       3.32179000      11.43240000      16.35542852     -28.61861350     -39.89610227       0.01600000
+Ir       0.10388400       4.80882000      11.91770000     -43.30472347       0.00123413     -28.85539482       0.01600000
+O        1.24087000       3.53118000      12.62470000     -33.22254489     -72.82358372      -7.17579629       0.00800000
+O        6.38113000       3.14181000      12.27630000     -21.34761110      -7.62884799     -21.51689823       0.00800000
+O        2.34766000       4.80884000      13.20440000      -9.06085685       0.00065017     162.49827880       0.00800000
+O        1.31064000       4.80883000      13.18130000     -89.72493133      -0.00119312      86.72235421       0.00800000
+Ir       0.05911940       3.29250000      13.91430000     -12.05674359       4.69567041      22.32968164       0.01600000
+Ir       3.21871000       4.80881000      14.65440000      12.75788165       0.00014581      45.78139223       0.01600000
+O        3.23990000       4.28843000      12.93390000     123.93821554     -51.18052383       1.17588244       0.00800000
+O        1.83928000       4.29357000      12.30580000     -35.35167609     -65.76624015    -124.45673566       0.00800000
+O        0.26086300       4.80880000      14.61250000      -2.63966217       0.00014070      16.62879074       0.00800000
+O        3.20764000       4.80881000      17.15160000      -0.22203441       0.00006716     -24.73453842       0.00800000
+Ir       3.21334000       3.14831000      17.77420000      -0.06131034     -15.11897124      -3.00787641       0.01600000
+Ir       6.42640000       4.80880000      17.74180000       0.11147314      -0.00094625       0.48501267       0.01600000
+O        0.88676900       3.18057000      17.54790000      12.22534721       1.94614020      -0.52179140       0.00800000
+O        5.54110000       3.18321000      17.54160000     -12.24977006       1.74432520      -0.58773482       0.00800000
+O        3.21244000       4.80881000      18.31900000       0.30298137      -0.00007081      24.80457873       0.00800000
+O       -0.00049810       4.80880000      19.69660000      -0.00422011       0.00000743       1.09156613       0.00800000
+Ir       0.00005540       3.20518000      21.01090000       0.00163905       0.53417498      -0.98397764       0.01600000
+Ir       3.21388000       4.80881000      20.83400000      -0.00237225      -0.00022785       1.49074215       0.01600000
+O        4.39632000       3.22759000      20.87520000       1.07704289       0.08983734       0.37353924       0.00800000
+O        2.03178000       3.22848000      20.87370000      -1.08857685       0.09263110       0.38231389       0.00800000
+O        0.00039222       4.80881000      22.16310000      -0.00706635      -0.00005125       0.15002332       0.00800000
+O        3.17730000       6.33904000      13.20240000      20.74711358      68.14320488      19.43531505       0.00800000
+Ir       3.16749000       6.29584000      11.43240000      16.35649446      28.61990491     -39.89951283       0.01600000
+Ir       6.43919000       8.12004000      11.68850000      -2.49117089      -1.05892327     -26.68762777       0.01600000
+O        1.24084000       6.08648000      12.62470000     -33.22571946      72.81637131      -7.17863640       0.00800000
+O        6.38102000       6.47584000      12.27630000     -21.34732127       7.62547492     -21.51431078       0.00800000
+O        2.20538000       5.83021000      13.19410000     -17.11528894     104.79277191      69.61739673       0.00800000
+O        0.16021900       8.03072000      13.34340000       7.31785916      -2.88507279      -7.05990150       0.00800000
+Ir       0.05912770       6.32511000      13.91430000     -12.05486068      -4.69575618      22.33038905       0.01600000
+Ir       3.20773000       8.05549000      14.27670000       0.55023563       1.06315497       5.78838489       0.01600000
+O        3.23990000       5.32924000      12.93390000     123.93657433      51.18167349       1.17832277       0.00800000
+O        1.83930000       5.32412000      12.30580000     -35.34383675      65.77721605    -124.45656132       0.00800000
+O        6.39418000       7.92741000      14.48710000      -5.76449039      -0.86400135      31.28926611       0.00800000
+O        3.19217000       8.00250000      16.24660000      -0.01287957       0.48864102       1.61233874       0.00800000
+Ir       3.21334000       6.46931000      17.77420000      -0.06122270      15.11858862      -3.00755978       0.01600000
+Ir       0.00026888       7.98005000      17.81490000      -0.01543895      -6.43338456       2.58032211       0.01600000
+O        0.88671200       6.43703000      17.54790000      12.22754239      -1.94622977      -0.52202536       0.00800000
+O        5.54114000       6.43439000      17.54160000     -12.25187242      -1.74435040      -0.58795747       0.00800000
+O        3.20916000       8.00308000      18.83070000       0.01282689       2.42481839       1.65865250       0.00800000
+O        0.00337484       7.99340000      19.74010000      -0.00807736       0.61329187       1.50449447       0.00800000
+Ir       0.00005536       6.41243000      21.01090000       0.00162554      -0.53417809      -0.98400586       0.01600000
+Ir       3.21369000       8.01191000      20.83720000       0.00671234      -0.07709747      -0.63818275       0.01600000
+O        4.39632000       6.39002000      20.87520000       1.07708257      -0.08977038       0.37348260       0.00800000
+O        2.03178000       6.38913000      20.87370000      -1.08861668      -0.09255427       0.38226791       0.00800000
+O        0.00026975       8.01197000      22.16450000       0.00033322       0.09310425       0.49985960       0.00800000
+72
+Lattice="6.427874638174196 0.0 0.0 0.0 9.61761207018 0.0 0.0 0.0 32.85574927634839" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 density=4.399253 time=0.428 temp=590.81439 md_energy=-1430.3985 vasp_rundir=DFT_calcs/run_VASP__wjc4kz8 DFT_energy=540.17969185 DFT_stress_FOO="-0.8383375867070948 -0.9465798119265629 -0.7262004625551456 -0.0001040390540193807 0.030685283633368574 -2.685509165557286e-06" config_type=slab_MD_sample pbc="T T T"
+O        2.20590000       3.78692000      12.77570000      75.36504376    -180.78288527     -22.31122840       0.00800000
+Ir       3.22509000       9.61758000      11.44990000       2.18829483      -0.00222702      -5.05410972       0.01600000
+Ir       0.08880040       1.47648000      11.77180000      -6.03902533      11.29945106     -19.53385128       0.01600000
+O        1.00766000       9.61690000      12.91970000      18.34788352       0.00152790     -20.81299839       0.00800000
+O        6.34512000       9.61751000      12.69270000     -43.34586317       0.01587167     -21.89149985       0.00800000
+O        2.05358000       3.97146000      13.77970000      21.75639013    -108.07056518     145.42975075       0.00800000
+O        0.93574000       1.17479000      13.28530000      19.14483115      35.84021727      -6.04368002       0.00800000
+Ir       0.02504300       9.61761000      14.28250000     -26.58783891       0.01605223      57.73450962       0.01600000
+Ir       3.09676000       1.56318000      14.18400000       3.58639267       5.25780713       5.57524029       0.01600000
+O        3.41236000       9.61766000      13.27220000      21.95708604      -0.00229702       1.28606940       0.00800000
+O        2.10767000       9.61762000      13.15960000      20.51373349       0.00717217      -0.10936192       0.00800000
+O        6.59426000       1.60310000      14.01640000     -13.00814874      19.22537558      15.79520211       0.00800000
+O        3.03197000       1.66343000      16.27670000       0.26704033      -0.92176818       1.04717382       0.00800000
+Ir       3.20482000       9.61761000      17.74050000      -0.26854277       0.00108210      -2.94864025       0.01600000
+Ir       0.00999243       1.58575000      17.86970000       0.28837066      -1.97298400       6.96780934       0.01600000
+O        0.60651300       9.61759000      17.24770000      24.35504950       0.00142262      -3.99633612       0.00800000
+O        5.87490000      -0.00001526      17.25430000     -24.71217794       0.00157569      -3.51850041       0.00800000
+O        3.19704000       1.58316000      18.86800000       0.15748219      -2.05318408      -0.35802043       0.00800000
+O        0.01914760       1.60428000      20.01970000       0.02956658       0.30347337     -10.98270038       0.00800000
+Ir       0.00068648       0.00000084      21.00850000       0.05648941       0.00021742      -2.74206715       0.01600000
+Ir       3.21217000       1.58308000      20.82710000       0.02834516     -17.61806051       3.41358989       0.01600000
+O        4.39596000       0.00001924      20.69310000       1.22109147      -0.00048907       1.32671228       0.00800000
+O        2.02858000       0.00002027      20.68920000      -1.18660185      -0.00041204       1.32431468       0.00800000
+O        0.00256032       1.61377000      21.72840000      -0.08023345       0.61528331      12.92410347       0.00800000
+O        2.60984000       4.80908000      12.26340000     113.76705790      -0.09777694    -144.60539205       0.00800000
+Ir       3.06221000       3.44680000      11.44240000      32.85181064     -33.79882444     -42.51251111       0.01600000
+Ir       0.07091060       4.80900000      11.84750000     -70.05615406      -0.02866911     -52.80902514       0.01600000
+O        1.27951000       4.28341000      13.02330000    -122.81907046     -73.47900944     -14.08836511       0.00800000
+O        1.25578000       3.41097000      12.48630000     -57.88933475    -114.13944483     -25.99090313       0.00800000
+O        2.13346000       4.80866000      13.13470000      46.59420006       0.10638762      40.25575311       0.00800000
+O        0.50427800       4.80878000      13.40490000    -141.81178674       0.17547997      30.73935143       0.00800000
+Ir       0.16254900       3.36626000      13.84510000     -43.32440968     -36.46319775      31.76246980       0.01600000
+Ir       3.18494000       4.80903000      14.73770000      34.09157909       0.04310000      54.24310670       0.01600000
+O        3.02644000       4.26469000      13.13840000     157.01555579     -64.61464004      27.81344043       0.00800000
+O        1.67346000       4.32379000      12.07160000     -33.32811402     -34.07422536    -159.23067875       0.00800000
+O        1.44001000       4.80905000      13.94900000     -41.97540758       0.19060820     189.94022849       0.00800000
+O        3.10883000       4.80882000      17.13260000      -1.69872835       0.00090260     -26.19928103       0.00800000
+Ir       3.21223000       3.09196000      17.79400000       0.10532661      -9.38246817      -2.56842186       0.01600000
+Ir       6.43490000       4.80881000      17.79120000       0.09665457       0.00078301       5.02570144       0.01600000
+O        0.58756500       3.18668000      17.35410000      24.18230285      -0.12343592      -4.36722173       0.00800000
+O        5.84900000       3.18496000      17.40890000     -24.63110149      -0.13378122      -2.50915402       0.00800000
+O        3.17131000       4.80881000      18.27090000       1.21136338      -0.00031512      26.16417177       0.00800000
+O        6.41023000       4.80880000      19.78830000       0.08272765       0.00046571      -0.26511674       0.00800000
+Ir       0.00079480       3.20502000      20.99530000      -0.02265303       5.61652201      -1.24764893       0.01600000
+Ir       3.21460000       4.80882000      20.85670000      -0.05516885      -0.00365164       7.70090001       0.01600000
+O        3.79445000       3.20072000      20.59850000      25.83159231       0.18033152      -2.63431961       0.00800000
+O        2.63535000       3.20122000      20.59740000     -25.76531793       0.34172192      -2.74858117       0.00800000
+O        0.00104723       4.80880000      22.01550000      -0.06082932       0.00050627       1.82096001       0.00800000
+O        2.20545000       5.83058000      12.77560000      75.25003327     180.78310366     -21.86730099       0.00800000
+Ir       3.06235000       6.17082000      11.44250000      32.99406325      33.91409055     -42.58716104       0.01600000
+Ir       0.08882290       8.14106000      11.77180000      -6.04868670     -11.32027605     -19.56880469       0.01600000
+O        1.27951000       5.33133000      13.01990000    -122.69591852      73.04055876     -14.90018014       0.00800000
+O        1.25536000       6.20689000      12.48780000     -58.07569135     114.09505503     -25.60370902       0.00800000
+O        2.05222000       5.64638000      13.77880000      21.15923666     108.06635953     145.27927514       0.00800000
+O        0.93558800       8.44244000      13.28530000      19.16128600     -35.86833207      -6.02613872       0.00800000
+Ir       0.16298100       6.25104000      13.84500000     -43.30963856      36.48964907      31.76582905       0.01600000
+Ir       3.09682000       8.05442000      14.18400000       3.58132856      -5.24818700       5.57102061       0.01600000
+O        3.02603000       5.35352000      13.13870000     157.14816064      64.70165460      27.97150547       0.00800000
+O        1.67455000       5.29678000      12.06800000     -32.94671949      33.92571289    -158.98416231       0.00800000
+O        6.59346000       8.01449000      14.01580000     -13.03280851     -19.21554409      15.80112507       0.00800000
+O        3.03163000       7.95408000      16.27660000       0.26629831       0.92149248       1.04625681       0.00800000
+Ir       3.21222000       6.52566000      17.79400000       0.10472033       9.38128584      -2.56724453       0.01600000
+Ir       0.01000010       8.03186000      17.86970000       0.28865234       1.97172097       6.96809579       0.01600000
+O        0.58755900       6.43094000      17.35400000      24.18159729       0.12316362      -4.36966654       0.00800000
+O        5.84900000       6.43266000      17.40890000     -24.63140649       0.13456308      -2.50762872       0.00800000
+O        3.19706000       8.03446000      18.86790000       0.15740824       2.05477232      -0.35646217       0.00800000
+O        0.01914140       8.01334000      20.01970000       0.02952155      -0.30315448     -10.98253027       0.00800000
+Ir       0.00079479       6.41259000      20.99530000      -0.02264153      -5.61563488      -1.24746900       0.01600000
+Ir       3.21217000       8.03451000      20.82710000       0.02848670      17.62357201       3.41322372       0.01600000
+O        3.79443000       6.41690000      20.59850000      25.83762909      -0.17953901      -2.63628256       0.00800000
+O        2.63537000       6.41639000      20.59750000     -25.77140752      -0.34054067      -2.74643974       0.00800000
+O        0.00256041       8.00384000      21.72840000      -0.08025689      -0.61457216      12.92390466       0.00800000
+72
+Lattice="6.427874638174196 0.0 0.0 0.0 9.61761207018 0.0 0.0 0.0 32.85574927634839" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 density=4.399253 time=0.698 temp=640.25104 md_energy=-2158.2765 vasp_rundir=DFT_calcs/run_VASP_qve__j9d DFT_energy=1251.78574599 DFT_stress_FOO="-1.3409595263393823 -1.464366758883616 -1.3241177203052097 -0.0015857883188504958 0.01326615397083193 0.004044582910443627" config_type=slab_MD_sample pbc="T T T"
+O        2.14333000       3.64219000      12.78720000      76.52888340    -173.62498201     -33.55731746       0.00800000
+Ir       2.82547000       9.60997000      11.75000000      38.51891466      -3.03971429     -39.53510980       0.01600000
+Ir       0.68109700       1.72626000      12.11860000     -25.91610989      22.17688105     -50.66339536       0.01600000
+O        1.17733000       0.05792890      12.13260000     -39.55837280      -8.91052220    -109.85192783       0.00800000
+O        0.70611600       0.11452300      13.09670000    -154.31068061       0.31566701     -26.74368124       0.00800000
+O        1.98674000       3.84121000      13.82120000      27.72370575    -107.89638815     142.03706232       0.00800000
+O        1.70447000       0.66936400      12.89830000      64.48894669     109.31711134     -66.76400365       0.00800000
+Ir       6.31199000       0.10852200      14.60810000     -40.72068026       0.65897061      34.99661060       0.01600000
+Ir       2.42687000       1.93094000      13.76830000      47.57828829      15.49085499      18.74082278       0.01600000
+O        2.50133000       0.14166600      13.44510000     105.72376608      -0.53247516      40.96428801       0.00800000
+O        1.53560000       0.16955100      13.93460000      28.90833473       8.36425961     156.50339683       0.00800000
+O        0.96340200       1.04730000      13.63770000     -40.36073726      65.92414599      44.48252624       0.00800000
+O        2.67379000       1.66347000      17.11960000      -0.56848948      -0.39980977      -2.31764370       0.00800000
+Ir       3.08033000       0.00347780      17.92310000       8.22700246       0.12717235      -6.94136827       0.01600000
+Ir       0.15117800       1.44357000      18.06450000      -9.11445532      11.21786369      -5.98291356       0.01600000
+O        0.49687700       0.01574110      17.09220000      21.15498841      -0.13332760     -16.19601882       0.00800000
+O        5.81034000       0.00338347      17.38370000     -24.94564645      -0.12800863      -0.98677913       0.00800000
+O        4.10115000       3.75366000      19.74690000      22.87674393     -96.08915973      67.92310562       0.00800000
+O        0.83003700       0.91580200      19.61990000     -32.01410693      39.40888797     -10.26227822       0.00800000
+Ir       0.11993400       0.00123502      20.92400000     -36.03652094      -0.08245789      34.33751137       0.01600000
+Ir       3.02030000       1.61999000      20.70560000       8.22235112       7.67486656       5.05706129       0.01600000
+O        2.33578000       0.00595733      19.52800000      73.86773352       0.13237841     -42.08235610       0.00800000
+O        1.25869000       0.00385209      19.16140000     -24.65533960      -0.36203274    -101.96473804       0.00800000
+O        1.65545000       0.55759300      20.24040000      22.19761070      58.69845243      78.56533184       0.00800000
+O        2.60398000       4.68823000      12.35140000     137.18231132     -15.58459962    -117.28972727       0.00800000
+Ir       2.72353000       3.70881000      11.15390000      29.82585980     -37.51255877     -58.87668712       0.01600000
+Ir       0.10919000       4.72747000      11.73460000     -70.83964225      -2.63950912     -53.13959217       0.01600000
+O        1.19257000       4.11596000      13.10840000    -140.31080557     -89.53122332      32.61427424       0.00800000
+O        1.21171000       3.41489000      12.30730000     -62.93336228    -103.10623896     -58.46232674       0.00800000
+O        2.07901000       4.67128000      13.19640000      39.38295436      -3.58697839      64.67108136       0.00800000
+O        0.45001000       4.78272000      13.35690000    -135.00210855      13.42328774      25.71284147       0.00800000
+Ir       0.64060000       2.81170000      13.84070000     -50.90172195     -17.67892047      48.28030649       0.01600000
+Ir       2.85418000       4.86252000      14.82830000      34.76512730       7.49514531      69.79701677       0.01600000
+O        2.94811000       4.12429000      13.23570000     146.87930858     -74.01109123      30.78732305       0.00800000
+O        1.62440000       4.35450000      12.22930000     -42.84385126     -28.80761651    -159.54305274       0.00800000
+O        1.36613000       4.77648000      13.92060000     -66.74724030      18.26837623     179.14710988       0.00800000
+O        2.61511000       4.81995000      18.65600000    -109.38047511       0.57835650     -37.36240350       0.00800000
+Ir       3.23009000       3.20714000      17.98350000     -13.93113318     -42.30910720     -28.91634588       0.01600000
+Ir       0.14314800       4.81043000      18.04300000      12.76534448       1.01619318     -13.45344753       0.01600000
+O        0.30414400       3.14185000      18.05210000      13.77150782      -5.94016840      -6.77728204       0.00800000
+O        5.59474000       3.40724000      18.60110000       2.87869131     -21.04375713      -0.13622777       0.00800000
+O        3.63706000       4.81683000      18.29100000       6.19443668       1.06250122    -140.75631842       0.00800000
+O        4.25574000       4.81517000      19.69260000      59.52729389       0.57927280     132.22983932       0.00800000
+Ir      -0.02982650       3.12705000      20.73530000       0.93417344      -0.73239815       3.85622908       0.01600000
+Ir       3.13065000       4.80622000      20.95860000     -21.32022988       0.30015881      47.76898492       0.01600000
+O        4.36164000       4.20985000      18.78120000      55.00117056     -98.18902992     -86.71861578       0.00800000
+O        3.32237000       4.28232000      19.28620000    -105.83822561    -100.25493135      49.05368278       0.00800000
+O        5.19734000       4.80777000      19.12330000      95.15566766      -4.91499466      19.30271368       0.00800000
+O        2.19246000       5.65946000      12.66330000      75.47401729     164.51296105     -33.85659692       0.00800000
+Ir       3.22298000       5.89186000      11.37440000      39.18247112      31.77850719     -36.91046820       0.01600000
+Ir       0.75972100       7.95340000      12.27750000     -22.76661127     -24.11670650     -36.83818065       0.01600000
+O        1.27197000       5.17457000      12.86030000    -113.44435385      74.85526680     -17.76912991       0.00800000
+O        1.27558000       6.06329000      12.31460000     -63.72593077     104.10629826     -35.16485597       0.00800000
+O        1.98274000       5.60560000      13.64980000      -0.23629905     128.65072864     124.48325738       0.00800000
+O        1.70660000       9.17743000      12.95590000      67.48153721    -113.29389907     -55.47871514       0.00800000
+Ir       0.64124700       6.49605000      13.77940000     -43.30978189      38.92245680      42.24112712       0.01600000
+Ir       2.38031000       7.88903000      13.78140000      34.26935124     -27.79190802      19.02585940       0.01600000
+O        2.96885000       5.23908000      13.19950000     169.03992502      65.90538697      37.82253466       0.00800000
+O        1.75383000       5.22103000      11.83130000     -11.07713563      34.91832332    -168.78266832       0.00800000
+O        0.98697000       8.85658000      13.70620000     -38.08399169     -73.40320773      48.40529667       0.00800000
+O        2.67605000       7.96296000      17.12400000      -0.61052660       0.44233926      -2.49135738       0.00800000
+Ir       3.23872000       6.42581000      17.99660000     -14.12407417      42.79141019     -28.76661157       0.01600000
+Ir       0.15047800       8.18806000      18.06700000      -8.00477519     -12.41738239      -6.64495357       0.01600000
+O        0.28650900       6.47883000      18.10200000      13.77526231       7.95141459      -6.03513490       0.00800000
+O        5.54127000       6.14842000      18.65770000       8.41116476      26.20136755      -1.31881306       0.00800000
+O        4.10969000       5.87531000      19.74610000      23.12033164      95.89790186      68.04154751       0.00800000
+O        0.83734900       8.70685000      19.62240000     -31.53772954     -39.89785328     -10.15880770       0.00800000
+Ir      -0.03133750       6.49011000      20.73250000       0.98772146       0.78042933       3.92367932       0.01600000
+Ir       3.02047000       7.99761000      20.70370000       7.98867851      -7.52958803       5.00004380       0.01600000
+O        4.37356000       5.41799000      18.77730000      55.80344978      98.13509772     -89.62889575       0.00800000
+O        3.33434000       5.33802000      19.28890000    -103.39442935      95.62090040      50.62193917       0.00800000
+O        1.65990000       9.07180000      20.24350000      22.75054720     -58.20904734      78.73234223       0.00800000
+72
+Lattice="6.427874638174196 0.0 0.0 0.0 9.61761207018 0.0 0.0 0.0 32.85574927634839" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 density=4.399253 time=0.904 temp=533.04255 md_energy=-2692.1454 vasp_rundir=DFT_calcs/run_VASP_xkftxegm DFT_energy=1824.2759117 DFT_stress_FOO="-1.7769954298911212 -1.884324379713231 -1.7663587916149426 -0.00951829835239099 -0.01060335368114242 -0.011694716972367396" config_type=slab_MD_sample pbc="T T T"
+O        2.09817000       3.64875000      12.82600000      55.62627103    -166.13939701     -35.04247192       0.00800000
+Ir       2.64259000       9.49524000      11.77590000      43.03700586      -7.08320163     -46.95547108       0.01600000
+Ir       1.20454000       1.96973000      11.85990000     -18.40046387      -5.55049082     -53.76689835       0.01600000
+O        1.04051000       0.11831400      12.20230000     -58.37307917      -0.55028349    -102.31273501       0.00800000
+O        0.63652000       0.12855500      13.19260000    -152.01541319     -14.38569865     -14.60395762       0.00800000
+O        1.83980000       3.86669000      13.87590000     -20.50831557     -89.84762505     143.63521497       0.00800000
+O        1.63134000       0.72350200      12.87890000      58.16306483      90.43284266     -76.93029685       0.00800000
+Ir       6.34675000       0.34128400      14.74610000     -31.84945248       3.26233878      33.24968588       0.01600000
+Ir       2.42267000       2.14922000      13.41900000      52.59554580     -10.92085865      22.39072636       0.01600000
+O        2.43722000       0.29578800      13.45940000     105.07999616       6.95477040      44.98221852       0.00800000
+O        1.46117000       0.34847200      13.95030000      22.97941049      23.67143091     151.23213114       0.00800000
+O        0.87344800       1.17747000      13.49100000     -45.86475737      77.36777876      21.21268856       0.00800000
+O        1.63189000       0.99747200      19.21620000      51.36364731     152.19051514     -31.55195883       0.00800000
+Ir       2.86945000       9.53651000      18.21770000      47.61949420      -5.63976307     -42.62441235       0.01600000
+Ir       0.06695580       1.88349000      18.64460000     -17.51043739      24.54260722     -16.19679757       0.01600000
+O        1.21969000       0.59064300      18.30840000      21.11870698      48.24061978    -124.38482576       0.00800000
+O        0.42659900       9.51270000      18.59510000     -91.90817658     -31.77988935    -104.95692362       0.00800000
+O        5.18393000       3.89349000      19.75650000     -18.23438008    -120.98431447     124.99534238       0.00800000
+O        0.53742000       0.55237900      19.48200000    -111.52761227      74.40302650      46.54901444       0.00800000
+Ir       0.03473830       9.63676000      21.04880000     -38.34733201       0.59043385      47.58778190       0.01600000
+Ir       2.99571000       1.34169000      20.24730000      33.41351285      26.26613711      17.33053517       0.01600000
+O        2.18954000       0.06012690      19.66270000     139.81239090       2.58545741      17.67631072       0.00800000
+O        1.34633000       9.59234000      19.12690000      34.00085707     -39.33234805     -80.43187592       0.00800000
+O        1.36736000       0.57339900      20.16430000     -11.68033633      77.47390443     131.52317540       0.00800000
+O        2.82200000       4.35537000      12.46230000     150.12169962     -51.04322194    -112.63629977       0.00800000
+Ir       2.27169000       3.67257000      10.99330000      20.97804034     -31.56006533     -72.74362070       0.01600000
+Ir       0.17966200       4.56548000      11.63680000     -73.95733589       1.17165529     -54.34442684       0.01600000
+O        1.20254000       4.22004000      13.07580000    -152.97715514     -75.81090793      31.34292463       0.00800000
+O        1.23891000       3.57158000      12.28910000     -67.70851509     -80.94284111     -63.75786816       0.00800000
+O        2.13608000       4.63541000      13.25110000      47.36190836       0.25198711      86.19718557       0.00800000
+O        0.46530500       4.89733000      13.26280000    -135.15267908      11.81508420      11.55730228       0.00800000
+Ir       0.50300300       2.86857000      13.64660000     -59.43468734     -23.88087780      39.04096993       0.01600000
+Ir       2.68555000       4.91664000      14.92980000      28.81678497      11.78431206      73.71155775       0.01600000
+O        2.88213000       3.95302000      13.49170000     133.65205271     -90.69311505      75.19415385       0.00800000
+O        1.78091000       4.49439000      12.23510000     -23.86200094     -32.18586216    -174.93409816       0.00800000
+O        1.37891000       4.90225000      13.87720000     -60.58317876      36.62654101     168.61509412       0.00800000
+O        3.59172000       4.86751000      18.94330000    -127.22644392      13.00483715     -18.25917936       0.00800000
+Ir       3.32585000       3.20499000      18.45970000     -36.11018504     -37.19743508     -14.31609675       0.01600000
+Ir       6.35401000       4.88934000      17.73650000      54.11186888       2.65262612     -59.92166315       0.01600000
+O        5.96736000       3.79963000      18.97050000     113.52417716     -74.73157976     -43.41286114       0.00800000
+O        6.05237000       4.66343000      19.65920000     153.90193816      14.62466402      72.24737880       0.00800000
+O        4.44074000       4.59097000      18.31490000     -52.51015126     -27.79677023    -173.77919530       0.00800000
+O        5.07328000       4.90440000      20.01410000      14.95476604       3.05144913     183.99768088       0.00800000
+Ir       6.34487000       3.06795000      20.51400000      18.98396452     -22.62012824      33.73214179       0.01600000
+Ir       3.48806000       4.88630000      20.65010000     -48.63118839      -4.18370306      56.09525785       0.01600000
+O        4.93156000       3.66514000      18.67480000     -15.78979596    -134.76882848     -87.79445414       0.00800000
+O        4.32655000       4.26560000      19.38850000    -133.02520211    -107.69568315      84.87486611       0.00800000
+O        5.27650000       4.60754000      18.93250000      66.74322005     -18.02153217     -90.25784516       0.00800000
+O        2.36902000       5.32574000      12.52960000     111.80254566      97.26100411     -88.11696723       0.00800000
+Ir       3.19803000       5.50399000      11.23310000      45.88112706      29.69459468     -47.55301837       0.01600000
+Ir       0.97856500       7.94428000      12.19180000     -29.05182106     -19.46152172     -39.33500020       0.01600000
+O        1.34210000       5.26115000      12.85090000    -138.13766708      98.10086614     -23.88821983       0.00800000
+O        1.79696000       6.20663000      12.59970000       0.95974597     132.29569063     -24.99451062       0.00800000
+O        2.12502000       5.65270000      13.51900000      46.35704186     138.82442152     139.82247848       0.00800000
+O        1.65437000       9.24185000      13.04740000      68.62956746    -117.38469680     -29.78906467       0.00800000
+Ir       0.69034600       6.50688000      13.83070000     -50.77433198      39.26968636      39.63394449       0.01600000
+Ir       2.37618000       7.67261000      13.48960000      43.74304388      -1.70903085      21.29869695       0.01600000
+O        3.06998000       5.07534000      13.26540000     156.87915694      63.77800681      50.03682809       0.00800000
+O        1.57526000       5.42076000      11.83350000     -49.05484116      39.87797226    -143.37253747       0.00800000
+O        1.01450000       8.91850000      13.82650000     -25.10746022     -83.38409256      55.18325252       0.00800000
+O        1.59017000       8.61900000      19.16750000      38.58720837    -122.77582624     -56.05563818       0.00800000
+Ir       3.48067000       6.41671000      18.42750000     -45.87381911      43.65518596     -25.61103486       0.01600000
+Ir       0.08981540       7.71717000      18.55000000      -9.44372707     -20.86252568     -14.42141671       0.01600000
+O        4.97338000       6.29863000      19.05870000      10.64024506     139.77214041     -25.07479416       0.00800000
+O        5.61582000       5.51206000      19.21580000     153.03217417      85.81106695      -8.90957758       0.00800000
+O        4.65503000       5.88398000      19.99910000     -49.33827895      78.13833785     105.24581003       0.00800000
+O        0.53515400       9.02298000      19.55310000    -109.31773570     -85.33577826      55.12854880       0.00800000
+Ir       6.16831000       6.36704000      20.47040000      36.62485737      31.54963401      40.16370314       0.01600000
+Ir       2.97658000       8.37468000      20.25270000      34.27734935     -27.68409728      18.37847987       0.01600000
+O        5.00121000       5.48375000      18.31020000      -2.46557097      75.10379185    -167.55695452       0.00800000
+O        4.50471000       5.28847000      19.19520000    -100.18478103      66.68703539      21.49672954       0.00800000
+O        1.40925000       9.10153000      20.15520000      -3.43607789     -78.84046286     125.23515699       0.00800000
+72
+Lattice="6.427874638174196 0.0 0.0 0.0 9.61761207018 0.0 0.0 0.0 32.85574927634839" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 density=4.399253 time=1.18 temp=476.00373 md_energy=-2816.3002 vasp_rundir=DFT_calcs/run_VASP_senmo7fe DFT_energy=1907.09807464 DFT_stress_FOO="-1.8466210345790113 -2.008362845940986 -1.8580342831201548 0.008011257113208277 0.015638132110234824 0.006731903312017172" config_type=slab_MD_sample pbc="T T T"
+O        1.74182000       3.49471000      12.49330000      38.05020374    -157.78837570     -21.51674878       0.00800000
+Ir       2.52759000       9.05417000      11.20420000      25.54128254     -12.55318030     -54.05520761       0.01600000
+Ir       1.88483000       2.05645000      11.57980000      18.72798411     -13.67681386     -53.02593140       0.01600000
+O        1.25126000       0.37256200      12.00770000     -68.61633638      24.94808396    -120.84509688       0.00800000
+O        0.87813500       9.63769000      13.08790000    -136.11750189     -19.25928156      36.80436470       0.00800000
+O        1.42821000       3.76817000      13.50130000     -43.32214216     -82.90558958     143.75465827       0.00800000
+O        2.30842000       0.62033000      12.46540000     111.28509122      67.78190309     -52.88683387       0.00800000
+Ir       0.86963200       0.93678000      14.56340000     -23.11783491       6.07222897      52.40366217       0.01600000
+Ir       2.33512000       2.19695000      13.57150000      51.67945413      -1.78701598      44.28872572       0.01600000
+O        2.69025000       9.28656000      13.02160000     128.72278617     -50.35841867      19.88444125       0.00800000
+O        2.00325000       0.38488200      13.50110000      59.31336350      46.28965738     111.70430729       0.00800000
+O        1.34291000       0.99822800      12.89040000     -64.04304288      79.37721587       1.63183325       0.00800000
+O        0.81353300       1.05485000      19.95230000      30.52946043     150.60892807      39.51895332       0.00800000
+Ir       1.72211000       9.31828000      18.06380000      32.49801736     -11.48500677     -66.48838700       0.01600000
+Ir       6.10055000       2.26363000      19.37330000      -6.33333745     -17.12098472      -6.61907220       0.01600000
+O        0.70619800       0.77359500      18.89290000      23.59189677      75.37308637    -107.59664074       0.00800000
+O        0.20473400       9.36641000      18.86060000     -69.13132235     -48.38195036    -125.39304222       0.00800000
+O        5.68970000       3.88462000      19.75280000       0.27444652    -126.19985568     122.05994907       0.00800000
+O       -0.12748800       0.53884600      19.56600000    -153.27084255      63.29835255     -13.69664154       0.00800000
+Ir       6.00391000       8.96636000      21.65520000     -19.71438078      -9.96551157      33.70973175       0.01600000
+Ir       2.42870000       1.09292000      19.45100000      50.27453651      36.00586882      -6.28900917       0.01600000
+O        1.38340000       0.25672800      20.54270000     102.24313128       7.85261072      94.05888399       0.00800000
+O        0.97052600       0.03281240      19.60620000     109.94245585       3.62404971     -47.99337529       0.00800000
+O        0.29590400       0.30971600      20.53170000     -76.77080024      71.81204206     127.06835174       0.00800000
+O        2.51696000       4.13833000      12.09930000     148.84331206     -67.10585862    -105.85128505       0.00800000
+Ir       2.01265000       3.96518000      10.47260000      20.56640850     -21.25117187     -78.90513643       0.01600000
+Ir       6.36711000       4.60887000      11.14730000     -70.24353304       4.44694185     -54.13791263       0.01600000
+O        0.82430400       4.11144000      12.66280000    -173.99389073     -79.91217438      25.85548922       0.00800000
+O        0.93784600       3.48085000      11.81320000     -69.16132536     -76.00351857     -72.73041500       0.00800000
+O        1.81016000       4.48773000      12.86790000      35.68225731     -12.50677779      92.14768801       0.00800000
+O        0.18945400       4.95630000      12.79360000    -127.22910459      30.46999302       0.86786567       0.00800000
+Ir       0.42443100       2.45527000      13.05840000     -66.71199312     -22.24353915      16.68755966       0.01600000
+Ir       2.22068000       4.81735000      14.57730000      24.41326187      11.17847980      78.64591235       0.01600000
+O        2.51980000       3.82592000      13.17280000     125.14780213     -82.86268109      81.87120600       0.00800000
+O        1.47680000       4.34641000      11.86770000     -32.40397155     -40.23252496    -168.57229093       0.00800000
+O        1.05687000       4.83013000      13.43720000     -69.83234473      35.53477338     162.07493175       0.00800000
+O        4.71990000       4.61237000      18.50350000    -159.46211980      -9.06234341    -107.19151936       0.00800000
+Ir       3.94823000       2.93791000      19.22410000     -38.10379352     -34.86961520      -0.37313437       0.01600000
+Ir       0.64995200       5.62017000      18.31150000      67.70749654      28.43331413     -42.70247786       0.01600000
+O        6.39391000       3.98247000      18.87410000     153.69426067     -91.18482305     -47.10658692       0.00800000
+O        0.04468790       4.72237000      19.63500000     163.66646073      10.54502255      39.74813260       0.00800000
+O        5.78435000       4.47846000      18.07480000      58.15734403     -20.63358783    -160.31420538       0.00800000
+O        5.49830000       4.87246000      20.12160000       0.66394980     -11.41791233     191.66429523       0.00800000
+Ir       0.47978700       3.62054000      20.77470000      34.26981109     -21.53433203      44.40336463       0.01600000
+Ir       3.86768000       4.90560000      20.68880000     -52.45549274     -10.15805447      49.87680781       0.01600000
+O        5.33138000       3.72369000      18.73360000     -35.63116062    -151.30922595     -90.12317614       0.00800000
+O        4.76320000       4.30212000      19.52590000    -154.70840336     -67.97239971      75.41260550       0.00800000
+O        5.63064000       4.69837000      19.06960000      33.82048940      18.96034590     -33.57177659       0.00800000
+O        2.11596000       5.11004000      12.12550000     118.09267147      65.96410632     -92.15353151       0.00800000
+Ir       3.11774000       5.66777000      11.17410000      57.61666211      31.36552484     -41.35667952       0.01600000
+Ir       0.70217100       8.07697000      12.16070000     -45.21421230     -19.71798592     -26.16391600       0.01600000
+O        1.09971000       5.16694000      12.42370000    -134.35328103     105.24146324     -23.88617835       0.00800000
+O        1.61266000       6.06374000      12.18340000      -5.15970045     140.03715981     -25.61710049       0.00800000
+O        1.91460000       5.50478000      13.08740000      61.56556670     135.19747875     127.32730565       0.00800000
+O        1.74717000       9.25353000      12.58130000     -12.17105291     -78.97153500     -64.13258955       0.00800000
+Ir       0.75043300       6.48588000      13.61970000     -36.93147954      43.18873426      47.08746272       0.01600000
+Ir       2.45495000       7.45966000      12.77790000      41.10934231     -10.29472837       8.37381413       0.01600000
+O        2.78987000       4.87372000      12.89350000     169.01622356      58.20469846      54.06514049       0.00800000
+O        1.39129000       5.29810000      11.41140000     -40.46554531      49.72295947    -144.79894506       0.00800000
+O        1.64145000       8.96051000      13.59130000     -16.27989594     -85.67526370      97.13573858       0.00800000
+O        0.85205600       8.64217000      19.37530000      56.55200097    -115.13482668     -59.14533005       0.00800000
+Ir       3.81350000       6.77035000      19.60580000     -37.77945618      29.54692204       0.00560949       0.01600000
+Ir       6.21578000       7.41868000      19.64340000      -3.30078470       7.83682818      -2.23305024       0.01600000
+O        5.24708000       6.24526000      18.98870000     -22.68042236     117.21070676     -65.51780529       0.00800000
+O        5.93798000       5.60669000      19.40630000     132.84096003     105.87648182      13.34206306       0.00800000
+O        5.21393000       5.91707000      20.11540000     -33.09044213      62.56754701     114.75982194       0.00800000
+O       -0.07651390       9.11174000      19.88540000    -137.55087368     -70.80346215      27.18635630       0.00800000
+Ir       0.38907000       5.81517000      20.80180000      45.18618972      20.31917961      57.00838140       0.01600000
+Ir       2.46368000       8.63664000      19.89040000      53.42982121     -31.04813674      10.88356677       0.01600000
+O        5.41916000       5.43444000      18.37730000      -0.74060333      89.29705644    -175.76688445       0.00800000
+O        4.80736000       5.32715000      19.31430000    -175.93152825      58.15881219      17.03155533       0.00800000
+O        0.82982800       8.91415000      20.43830000      27.30755049    -108.96009371      98.40737706       0.00800000
+72
+Lattice="6.427874638174196 0.0 0.0 0.0 9.61761207018 0.0 0.0 0.0 32.85574927634839" Properties=species:S:1:pos:R:3:DFT_forces:R:3:force_atom_sigma:R:1 density=4.399253 time=1.567 temp=570.76492 md_energy=-3026.681 vasp_rundir=DFT_calcs/run_VASP_m83k4g4g DFT_energy=2105.07250361 DFT_stress_FOO="-1.951039927264179 -2.2067927666954508 -2.0267161327373677 0.022634158899343244 0.014330764556117034 0.003383306047302922" config_type=slab_MD_sample pbc="T T T"
+O        1.85490000       3.08830000      12.17700000      38.56879559    -156.11419534      26.93991641       0.00800000
+Ir       1.95215000       9.30850000      10.61360000      15.11882721     -14.10129548     -38.19445107       0.01600000
+Ir       2.64995000       2.21110000      11.09670000      66.94857371     -35.50158600     -54.34042140       0.01600000
+O        1.15997000       1.87098000      11.70960000     -29.42819423      61.88996451     -91.23220821       0.00800000
+O        0.32198500       1.25825000      12.18280000    -133.60140493       6.82948339     -17.57946482       0.00800000
+O        1.57128000       3.51632000      13.10350000     -39.01865186     -66.71834435     162.30742954       0.00800000
+O        1.97093000       1.15008000      12.00940000     110.03697848       7.69522133     -46.16254086       0.00800000
+Ir       0.92430700       1.18669000      14.27010000     -17.34893099      -9.04221372      60.89663558       0.01600000
+Ir       2.52959000       2.21711000      13.39800000      67.00492338     -13.64065679      60.99564788       0.01600000
+O        1.75087000       0.07703300      12.17320000      64.73277231    -111.55651684      -9.59695732       0.00800000
+O        1.93074000       0.70936800      13.02060000      95.40478872     -45.83747846     106.58479690       0.00800000
+O        1.26030000       1.56362000      12.69110000       1.27983539      69.38149933      78.29847836       0.00800000
+O        6.22262000       9.28433000      20.04620000       3.32237540     134.58298078      74.95296605       0.00800000
+Ir       1.13307000       9.25608000      18.14250000      28.97595674      10.58282330     -51.21720526       0.01600000
+Ir       6.20284000       2.75328000      19.75510000      14.31538321     -32.57839129      -8.86746600       0.01600000
+O        6.21849000       9.26232000      18.98240000     -13.92688146     103.93656642     -68.64981953       0.00800000
+O        6.12378000       8.19778000      18.58690000      -4.09531533     -25.48434662    -164.16214737       0.00800000
+O        6.02233000       4.45890000      20.19910000      34.71721032    -133.94030433      90.34817099       0.00800000
+O        5.38567000       8.70238000      19.31490000    -149.34448260      64.65062842     -41.40704326       0.00800000
+Ir       5.38162000       7.50236000      21.46190000     -38.36441495      27.16385603      85.80872427       0.01600000
+Ir       1.00805000       0.91604900      19.80480000       8.98174179      33.84988431      10.83651919       0.01600000
+O        0.29113100       8.44907000      20.60120000      77.17179121      21.82874547     127.76402989       0.00800000
+O        0.18628300       8.41103000      19.53270000     122.50212031      36.41087165     -31.84970694       0.00800000
+O        5.69785000       8.35234000      20.24720000    -118.03990557      48.20527812      92.67098187       0.00800000
+O        2.61577000       3.75638000      11.64960000     147.68849904     -56.79854251    -100.10817082       0.00800000
+Ir       2.28737000       3.84369000       9.94036000      19.65584972     -12.85516952     -81.40493480       0.01600000
+Ir      -0.00011376       3.95588000      10.75860000     -73.68978175      -6.76955453     -55.89606924       0.01600000
+O        0.97872600       3.69815000      12.20170000    -149.79693181     -59.34807705       3.65261742       0.00800000
+O        1.07228000       2.89196000      11.52100000     -59.02367951     -58.82321854     -80.57865977       0.00800000
+O        1.90553000       4.14142000      12.35410000      43.54560383       4.45866223      82.31831209       0.00800000
+O        0.26184500       4.44997000      12.35480000    -135.47838180      27.37161613      15.76071210       0.00800000
+Ir       0.14956400       2.67437000      12.97070000     -89.66324736       1.33513066      53.30092966       0.01600000
+Ir       2.35280000       4.71450000      14.03390000      24.03570719      18.85364430      73.03392382       0.01600000
+O        2.67224000       3.62002000      12.71940000     135.56302337     -51.98280701      85.36546259       0.00800000
+O        1.58048000       3.79586000      11.37010000     -18.92488740     -67.13259144    -163.26955086       0.00800000
+O        1.15569000       4.51038000      12.93530000     -67.82957641      64.76666669     162.96485406       0.00800000
+O        4.94187000       5.50937000      19.29220000    -176.49170909      32.78663687     -60.46815962       0.00800000
+Ir       4.55959000       3.53067000      20.64410000     -54.51739863     -33.90607486      11.97899318       0.01600000
+Ir       0.86446300       5.75244000      18.39380000      60.82923064      -0.35553725     -71.43739577       0.01600000
+O        0.01734340       4.47419000      19.18910000     115.79751407    -102.93731461     -88.38583143       0.00800000
+O        0.47741200       5.06828000      20.03020000     174.32296985     -47.64346951      48.82604357       0.00800000
+O        5.72597000       5.10811000      18.58510000     -19.23909236     -30.40971215    -164.64103274       0.00800000
+O        6.08538000       5.47070000      20.60360000      33.37055900     -11.10222962     174.11123952       0.00800000
+Ir       6.16990000       4.00464000      21.71360000      20.20066946     -36.34134055      50.31445512       0.01600000
+Ir       4.72011000       5.63742000      21.56870000     -53.92375159      -4.79507487      59.77047251       0.01600000
+O        5.33307000       4.43064000      19.35610000    -100.17441820    -138.03813748     -67.46563625       0.00800000
+O        5.15479000       5.07663000      20.21910000    -160.12329623     -43.25104752      89.15447573       0.00800000
+O        5.95510000       5.30537000      19.56220000      34.24915841     -13.78922706     -54.00334933       0.00800000
+O        2.15074000       4.67341000      11.52010000     108.05606161      55.35809910    -121.30907117       0.00800000
+Ir       3.14018000       5.65936000      10.85860000      51.88377471      32.06356047     -34.98158127       0.01600000
+Ir       0.53504600       8.46911000      12.09660000     -29.78111969     -20.16313097       4.11668470       0.01600000
+O        1.14045000       4.69953000      11.89160000    -139.07486671      95.33994160     -34.31791685       0.00800000
+O        1.56837000       5.61048000      11.57450000     -21.79461884     141.97377228     -26.44145063       0.00800000
+O        1.95171000       5.16627000      12.47560000      57.55534633     153.96889364     103.12869367       0.00800000
+O        1.04599000       0.74547100      11.58790000     -45.47336657     -43.18187390    -119.08899567       0.00800000
+Ir       0.81474900       6.20957000      12.98860000     -34.14398011      42.83568706      34.44144358       0.01600000
+Ir       2.22009000       7.32205000      11.86920000      19.74609321      12.00335005      -2.29537200       0.01600000
+O        2.85564000       4.62133000      12.31210000     162.65604175      78.67697389      36.22545516       0.00800000
+O        1.36098000       4.77289000      10.89280000     -54.75234689      33.43974055    -140.15544053       0.00800000
+O        0.88071300       0.47616300      12.70590000     -90.64919797     -78.84722052      67.91398596       0.00800000
+O        0.34105600       7.46862000      19.10350000     118.77370010     -48.32500794    -106.16954235       0.00800000
+Ir       4.28348000       7.05204000      19.68750000     -92.34095638      21.29151839      -7.16748475       0.01600000
+Ir       1.42368000       6.76563000      20.17060000     104.96134561      -6.15879209      17.58786202       0.01600000
+O        6.06147000       6.82322000      19.55810000     -19.87789635      14.63289775     -80.37312674       0.00800000
+O        0.14942200       6.01687000      19.77430000     167.99827227      15.44695924     -37.50580497       0.00800000
+O        6.21560000       6.57396000      20.57270000      17.59210884      29.72148748     147.31901325       0.00800000
+O        5.69347000       7.71097000      19.42000000    -148.68288130     -34.63000665     -58.08621439       0.00800000
+Ir       0.57772600       5.86713000      21.80100000      37.52933253       3.44170210      65.32762273       0.01600000
+Ir       1.84026000       8.68876000      19.93960000      60.23193374       6.74928681      13.38554175       0.01600000
+O        5.75087000       6.13149000      18.94500000     -29.22534437      84.63098040    -185.58406576       0.00800000
+O        5.45978000       6.10537000      20.04430000    -142.05321724      92.74016630      73.31155481       0.00800000
+O        0.02311280       7.54428000      20.16770000      84.56925743     -38.79468964     112.67964380       0.00800000
