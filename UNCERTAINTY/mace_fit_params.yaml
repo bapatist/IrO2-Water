@@ -1,0 +1,14 @@
+energy_key: DFT_energy
+forces_key: DFT_forces
+device: cuda
+ema: null
+config_type_weights: {"Default":1.0}
+max_num_epochs: 300
+model: MACE
+name: MACE_model
+r_max: 4.5
+start_swa: 200
+swa: null
+train_file: train_with_test.xyz
+valid_file: test_all_ITER4.xyz
+batch_size: 6
